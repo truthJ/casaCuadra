@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casacuadra</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/casacuadra.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="fnbPanel" class="allMenu">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <ul>
+                <li><a href="shopAll_01.html">products</a></li>
+                <li><a href="shopAll_01.html">shop all</a></li>
+                <li><a href="decor_01.html">decor</a></li>
+                <li><a href="kitchenBar_01.html">kitchen & bar</a></li>
+                <li><a href="lighting.html">lighting</a></li>
+                <li><a href="objects_01.html">objects</a></li>
+                <li><a href="sale.html">sale</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="about.html">casa Cuadra</a></li>
+            </ul>
+            <ul>                
+                <li><a href="contactUs.html">contact</a></li>
+                <li><a href="contactUs.html">contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="signUp.html">subscribe</a></li>
+                <li><a href="signUp.html">sign up</a></li>
+            </ul>
+            <ul>            
+                <li><a href="shippingReturn.html">policies</a></li>
+                <li><a href="shippingReturn.html">shipping & returns</a></li>
+            </ul>
+        </div>
+        <span>
+            <a href="myAccountEmpty.html">my account</a>
+            <a href="cart.html">cart</a>
+        </span>
+        <div>
+            <input type="search" title="Please enter your search term">
+        </div>
+        <footer>
+            <div>
+                <p class="numUrban">© 2023, Casa Cuadra</p>
+                <p>email</p>
+                <a href="mailto:HI@CASACUADRA.COM">HI@CASACUADRA.COM</a>        
+            </div>
+            <span>
+                <a href="https://www.pinterest.co.kr/">pinter</a>
+                <a href="https://www.instagram.com/">insta</a>
+                <a href="mailto:HI@CASACUADRA.COM">mail</a>
+            </span>
+        </footer>
+    </div>
+    <header>
+        <input type="button" data-target="fnbPanel" class="openBtn" value="open">
+        <h1><a href="indexAfter.html">casa cuadra</a></h1>
+    </header>
+    <div class="cartArea">
+        <div>
+            <h2>MY CART</h2>
+            <input type="button" class="openPop" data-popup="cartPopup" value="Remove all">
+        </div>
+        <section>
+            <div>
+                <h3>Sculptural Modernist Aluminum Candlesticks</h3>
+                <input type="button" class="openPop" data-popup="cartPopup">
+                <div id="shoppingBag">
+                    <img src="images/detailPage01_01.png" alt="detailPage01">
+                    <p class="numUrban">$165.00</p>
+                    <div class="countComp">
+                        <input type="button" value="-" class="countMinus">
+                        <input type="number" class="numUrban" id="countNumb" value="1" min="1" max="99" step="1">
+                        <input type="button" value="+" class="countPlus">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>TOTAL</p>
+                <strong>$<output id="totalPrice" class="numUrban">165.00</output></strong>
+            </div>
+            <p>add a note to your order</p>
+            <input type="text">
+            <a href="payment.html">CHECK OUT</a>
+            <div>
+                <p>Texes and shipping calculated at checkout</p>
+                <img src="images/ico_shopPay.png" alt="">
+            </div>
+        </section>
+        <img src="images/cart.png" alt="cart image">
+    </div>
+    <div id="cartPopup">
+        <h2>Are you sure you want to empty your shopping cart?</h2>
+        <div>
+            <a href="cartEmpty.html">YES</a>
+            <input type="button" value="NO" class="closePop">
+        </div> 
+    </div>
+</body>
+</html>

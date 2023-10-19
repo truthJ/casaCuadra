@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casacuadra</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/casacuadra.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="fnbPanel" class="allMenu">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <ul>
+                <li><a href="shopAll_01.html">products</a></li>
+                <li><a href="shopAll_01.html">shop all</a></li>
+                <li><a href="decor_01.html">decor</a></li>
+                <li><a href="kitchenBar_01.html">kitchen & bar</a></li>
+                <li><a href="lighting.html">lighting</a></li>
+                <li><a href="objects_01.html">objects</a></li>
+                <li><a href="sale.html">sale</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="about.html">casa Cuadra</a></li>
+            </ul>
+            <ul>                
+                <li><a href="contactUs.html">contact</a></li>
+                <li><a href="contactUs.html">contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="signUp.html">subscribe</a></li>
+                <li><a href="signUp.html">sign up</a></li>
+            </ul>
+            <ul>            
+                <li><a href="shippingReturn.html">policies</a></li>
+                <li><a href="shippingReturn.html">shipping & returns</a></li>
+            </ul>
+        </div>
+        <span>
+            <a href="myAccountEmpty.html">my account</a>
+            <a href="cart.html">cart</a>
+        </span>
+        <div>
+            <input type="search" title="Please enter your search term">
+        </div>
+        <footer>
+            <div>
+                <p class="numUrban">© 2023, Casa Cuadra</p>
+                <p>email</p>
+                <a href="mailto:HI@CASACUADRA.COM">HI@CASACUADRA.COM</a>        
+            </div>
+            <span>
+                <a href="https://www.pinterest.co.kr/">pinter</a>
+                <a href="https://www.instagram.com/">insta</a>
+                <a href="mailto:HI@CASACUADRA.COM">mail</a>
+            </span>
+        </footer>
+    </div>
+    <header>
+        <input type="button" data-target="fnbPanel" class="openBtn" value="open">
+        <h1><a href="indexAfter.html">casa cuadra</a></h1>
+    </header>
+    <div class="myAccountEditArea">
+        <h2>MY ACCOUNT</h2>
+        <form action="signUpcomplete.html">
+            <fieldset>
+                <legend>ACCOUNT EDIT</legend>
+                <ul>
+                    <li>
+                        <label for="NameField">NAME</label>
+                        <input type="text" id="NameField" value="Jo hannah" required>
+                    </li>
+                    <li>
+                        <label for="pwField">PASSWORD</label>
+                        <input type="password" id="pwField" maxlength="10" value="**********">
+                    </li>
+                    <li>
+                        <label for="pwField">CONFIRM PASSWORD</label>
+                        <input type="password" id="pwField" maxlength="10" value="**********">
+                    </li>
+                    <li>
+                        <label for="addressField">ADDRESS</label>
+                        <input type="text" id="addressField" class="numUrban" value="89, Majang-ro 272beon-gil, Bupyeong-gu, Incheon, Republic of Korea">
+                    </li>
+                </ul>
+            </fieldset>
+            <div>            
+                <input type="button" value="SUBMIT" class="openPop" data-popup="editPopup">
+                <input type="reset" value="CANCEL">
+            </div>
+        </form>
+    </div>
+    <div id="editPopup">
+        <input type="button" class="closePop">
+        <h2>Your account has been edited successfully.</h2>
+        <a href="shopAll_01.html">go Shopping</a>
+    </div>
+</body>
+</html>

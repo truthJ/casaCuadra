@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casacuadra</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/casacuadra.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="fnbPanel" class="allMenu">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <ul>
+                <li><a href="shopAll_01.html">products</a></li>
+                <li><a href="shopAll_01.html">shop all</a></li>
+                <li><a href="decor_01.html">decor</a></li>
+                <li><a href="kitchenBar_01.html">kitchen & bar</a></li>
+                <li><a href="lighting.html">lighting</a></li>
+                <li><a href="objects_01.html">objects</a></li>
+                <li><a href="sale.html">sale</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="about.html">casa Cuadra</a></li>
+            </ul>
+            <ul>                
+                <li><a href="contactUs.html">contact</a></li>
+                <li><a href="contactUs.html">contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="signUp.html">subscribe</a></li>
+                <li><a href="signUp.html">sign up</a></li>
+            </ul>
+            <ul>            
+                <li><a href="shippingReturn.html">policies</a></li>
+                <li><a href="shippingReturn.html">shipping & returns</a></li>
+            </ul>
+        </div>
+        <span>
+            <a href="myAccountEmpty.html">my account</a>
+            <a href="cart.html">cart</a>
+        </span>
+        <div>
+            <input type="search" title="Please enter your search term">
+        </div>
+        <footer>
+            <div>
+                <p class="numUrban">© 2023, Casa Cuadra</p>
+                <p>email</p>
+                <a href="mailto:HI@CASACUADRA.COM">HI@CASACUADRA.COM</a>        
+            </div>
+            <span>
+                <a href="https://www.pinterest.co.kr/">pinter</a>
+                <a href="https://www.instagram.com/">insta</a>
+                <a href="mailto:HI@CASACUADRA.COM">mail</a>
+            </span>
+        </footer>
+    </div>
+    <header>
+        <input type="button" data-target="fnbPanel" class="openBtn" value="open">
+        <h1><a href="indexAfter.html">casa cuadra</a></h1>
+    </header>
+    <div class="payment2Area">
+        <h2>Payment</h2>
+        <h3>payment information</h3>
+        <section class="PaymentDetails">
+            <div>
+                <h3>Sculptural Modernist Aluminum Candlesticks</h3>
+                <div>
+                    <img src="images/detailPage01_01.png" alt="detailPage01">
+                    <div>
+                        <ul>
+                            <li class="numUrban">$165.00</li>
+                            <li class="numUrban">count : 1</li>
+                        </ul>
+                        <ul>
+                            <li>SUBTOTAL</li>
+                            <li class="numUrban">$165.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li>shipping</li>
+                <li class="numUrban">$5.00</li>
+            </ul>
+            <ul>
+                <li>estimate taxes</li>
+                <li class="numUrban">$18.55</li>
+            </ul>
+            <ul>
+                <li>total</li>
+                <li class="numUrban">$188.55</li>
+            </ul>
+        </section>
+        <section>
+            <h3>card information</h3>
+            <form action="confirm.html">
+                <fieldset>
+                    <p>credit card number</p>
+                    <div>
+                        <input type="text" class="numUrban" maxlength="16" required>
+                        <input type="radio" name="card" value="paypal">
+                        <input type="radio" name="card" value="master">
+                        <input type="radio" name="card" value="visa">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <p>expiration date</p>
+                    <ul>
+                        <li>
+                            <label for="monthSelect">month</label>
+                            <select id="monthSelect" class="numUrban">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="yearSelect">year</label>
+                            <select id="yearSelect" class="numUrban" required>
+                                <option>2023</option>
+                                <option>2024</option>
+                                <option>2025</option>
+                                <option>2026</option>
+                                <option>2027</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><label for="securityNum">security number</label></li>
+                        <li><input type="password" id="securityNum" maxlength="3" required></li>
+                    </ul>
+                    <input type="submit" value="make a payment">
+                </fieldset>
+            </form>
+            <hr>
+            <ul>
+                <li><a href="refundPolicy.html">Refund policy</a></li>
+                <li><a href="privacyPolicies.html">Privacy policy</a></li>
+                <li><a href="termsService.html">Terms of service</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casacuadra</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/casacuadra.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="fnbPanel" class="allMenu">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <ul>
+                <li><a href="shopAll_01.html">products</a></li>
+                <li><a href="shopAll_01.html">shop all</a></li>
+                <li><a href="decor_01.html">decor</a></li>
+                <li><a href="kitchenBar_01.html">kitchen & bar</a></li>
+                <li><a href="lighting.html">lighting</a></li>
+                <li><a href="objects_01.html">objects</a></li>
+                <li><a href="sale.html">sale</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="about.html">casa Cuadra</a></li>
+            </ul>
+            <ul>                
+                <li><a href="contactUs.html">contact</a></li>
+                <li><a href="contactUs.html">contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="signUp.html">subscribe</a></li>
+                <li><a href="signUp.html">sign up</a></li>
+            </ul>
+            <ul>            
+                <li><a href="shippingReturn.html">policies</a></li>
+                <li><a href="shippingReturn.html">shipping & returns</a></li>
+            </ul>
+        </div>
+        <span>
+            <a href="myAccountEmpty.html">my account</a>
+            <a href="cart.html">cart</a>
+        </span>
+        <div>
+            <input type="search" title="Please enter your search term">
+        </div>
+        <footer>
+            <div>
+                <p class="numUrban">© 2023, Casa Cuadra</p>
+                <p>email</p>
+                <a href="mailto:HI@CASACUADRA.COM">HI@CASACUADRA.COM</a>        
+            </div>
+            <span>
+                <a href="https://www.pinterest.co.kr/">pinter</a>
+                <a href="https://www.instagram.com/">insta</a>
+                <a href="mailto:HI@CASACUADRA.COM">mail</a>
+            </span>
+        </footer>
+    </div>
+    <header>
+        <input type="button" data-target="fnbPanel" class="openBtn" value="open">
+        <h1><a href="indexAfter.html">casa cuadra</a></h1>
+    </header>
+    <div class="resetPWArea">
+        <h2>RESET PASSWORD</h2>
+        <h3>We will send you an email to reset your password.</h3>
+        <form>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="emailField">EMAIL</label>
+                        <input type="email" id="emailField" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <div>            
+                <input type="button" value="SUBMIT" class="openPop" data-popup="confirmPopup">
+                <input type="reset" value="CANCEL">
+            </div>
+        </form>
+    </div>
+    <div id="confirmPopup">
+        <input type="button" class="closePop">
+        <h2>A temporary password has been sent to your email.</h2>
+        <a href="signIn.html">go to sign In</a>
+    </div>
+</body>
+</html>

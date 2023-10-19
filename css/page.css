@@ -1,0 +1,4687 @@
+@media screen and (max-width: 767px){
+    #loginPopup{
+        padding: 50px 2%; width: 50%; background-color: white;
+        box-sizing: border-box; text-align: center;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+        position: fixed; left: 25%; top: 20%; 
+        z-index: 1000; display: none;
+    }
+    #loginPopup.active, .productListArea img,
+    .signUpArea a, .signInArea div, .myAccountEmptyArea > a:first-of-type{
+        display: block;
+    }
+    #loginPopup h2{
+        font-size: 30px; font-weight: 400; color: #1c1c1c; margin-bottom: 35px;
+        text-transform: uppercase;
+    }
+    #loginPopup h2 input.closeBtn{
+        width: 15px; float: right; line-height: 27px; height: 15px;
+        background: url('../images/ico_close_black.png') center center no-repeat;
+        border: none; text-indent: -9999px; margin-top: -35px;
+    }
+    #loginPopup p{
+        font-size: 18px; font-weight: 400; color: #444444; margin-bottom: 50px;
+        line-height: normal; width: 80%; margin: 0 auto;
+        line-height: 30px;
+    }
+    #loginPopup a.boxBtn{
+        line-height: 50px; width: 25%; margin: 25px auto; font-size: 15px;
+        background-color: black; display: block;
+    }
+
+    .introArea div h2, .signUpArea h2, .signUpCompleteArea h2,
+    .signInArea h2, .resetPWArea h2, .myAccountEmptyArea h2,
+    .viewAccountArea h2, .viewAccountEmptyArea h2,
+    .myAccountEditArea h2, .myAccountEditEmptyArea h2,
+    .orderHistoryArea h2, .contactUsArea > h2, .cartEmptyArea h2,
+    .paymentArea h2, .payment2Area h2, .shippingReturnArea h2,
+    .termsServiceArea h2, .refundArea section:first-child h2{
+        font-size: 24px; font-family: 500;
+    }
+    .signUpArea h3, .signUpArea form fieldset legend,
+    .signUpArea form fieldset ul li label, .signUpArea > input, .signUpArea a,
+    .signUpArea h3, .signInArea form fieldset ul li label,
+    .signInArea > input, .signInArea a, .resetPWArea h3,
+    .resetPWArea > input, .signUpArea a, .myAccountEmptyArea div,
+    .myAccountFullArea div, .viewAccountArea div, .viewAccountEmptyArea div,
+    .myAccountEditArea h3, .myAccountEditArea form fieldset legend,
+    .myAccountEditArea form fieldset ul li label, .myAccountEditArea > input,
+    .signUpArea a, .myAccountEditArea h3, .myAccountEditEmptyArea h3, 
+    .myAccountEditEmptyArea form fieldset legend,
+    .myAccountEditEmptyArea form fieldset ul li label,
+    .myAccountEditEmptyArea > input, .signUpArea a, .contactUsArea > p, 
+    .contactUsArea form fieldset legend, .contactUsArea form fieldset ul li label,
+    .contactUsArea > input, .contactUsArea a{
+        font-weight: 400;
+    }
+    .signInArea, .resetPWArea, .shippingReturnArea{
+        padding: 50px 0 50px 5%;
+    }
+    .myAccountFullArea, .viewAccountArea, .viewAccountEmptyArea,
+    .myAccountEditArea, .myAccountEditEmptyArea, .orderHistoryArea,
+    .contactUsArea, .cartEmptyArea, .confirmArea{
+        padding: 30px 0 0 5%; margin-bottom: 50px;
+    }
+
+    .contentsArea{
+        margin: 15px 0 auto;
+    }
+    .contentsArea > div{
+        margin: 0 5%;
+    }
+    .contentsArea > div:first-child{
+        position: relative;
+    }
+    .contentsArea div img{
+        width: 100%; display: block;
+    }
+    .contentsArea > div:first-child div{
+        position: absolute; top: 0; left: 0;
+        width: 82%; margin: 35% 0 0 9%;
+        padding: 10.84% 0 10.84% 0;
+        text-align: center;
+        border: 1px solid white; 
+    }
+    .contentsArea > div:first-child div h2 a{
+        display: block; font-size: 20px; font-weight: 500;
+    }
+    .contentsArea > div div p{
+        display: none;
+    }
+    .contentsArea > div:last-child{
+       position: relative; padding-top: 15px; 
+    }
+    .contentsArea > div:last-child > div:last-child{
+        position: absolute; top: 0; left: 0;
+        width: 82%; margin: 35% 0 0 9%;
+        padding: 10.84% 0 10.84% 0;
+        text-align: center; border: 1px solid white; 
+    }
+    .contentsArea > div:last-child > div h2 a{
+        display: block; font-size: 20px; font-weight: 500;
+    }    
+    .introArea{
+        padding: 0 5% 35px 5%;
+    }
+    .introArea, .productListArea{
+        margin: 0 auto;
+    }
+    .introArea:after{
+        content: ''; display: block; clear: both;
+    }
+    .introArea div{
+        margin-top: 20%;
+    }
+    .introArea div p:first-child{
+        font-size: 12px; font-family: 400; margin-bottom: 15px;
+    }
+    .introArea div h2{
+        margin-bottom: 30px;
+    }
+    .introArea div p:last-child{
+        font-size: 15px; font-family: 300;
+    }
+    .introArea img{
+        margin-top: 50px; width: 100%;
+    }
+    .productListArea{
+        padding: 0 5% 20px 5%;
+    }
+    .productListArea > div{
+        padding: 60px 1% 0 1%; margin-bottom: 30px;
+        background-color: #3c3c3c; height: 250px;
+    }
+    .productListArea > div > p{
+        font-size: 12px; font-weight: 400; text-transform: uppercase;
+        color: #6c6c6c; margin-bottom: 48px; margin-left: 5%;
+    }
+    .productListArea > div > div{
+        position: relative; padding: 0 5%;
+    }
+    .productListArea > div div > p{
+        padding: 18px 0 18px 20px;
+        background: url('../images/triangle_bottom.png') no-repeat right 20px center;
+        background-color: #6c6c6c; font-size: 12px; font-weight: 400;
+    }
+    .productListArea > div div ul{
+        position: absolute; left: 5%; z-index: 1; width: 90%;
+    }
+    .productListArea > div div ul li a{
+        font-size: 12px; font-weight: 400; padding: 18px 0 18px 20px;
+        display: block; background-color: #6c6c6c; padding-left: 20px;      
+    }
+    .productListArea > div div ul li:first-child a{
+        background: url('../images/triangle_top.png') no-repeat right 20px center;
+        background-color: #6c6c6c;
+    }
+    .productListArea > div div ul li a:hover{
+        background-color: black; 
+    }
+    .productListArea > ul {
+        margin-bottom: 15px;
+    }
+    .productListArea > ul:not(:first-child) li{
+        position: relative;
+    }
+    .productListArea > ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .productListArea > ul li:last-child{
+        margin-bottom: 40px;
+    }
+    .productListArea > ul:not(:first-child) li div a img{
+        width: 100%; opacity: 0.85;
+    }
+    .productListArea > ul:not(:first-child) li{
+        background-color: black;
+    }
+    .productListArea > ul:not(:first-child) li div div{
+        position: absolute; bottom: 27px; left: 50%;
+        width: 100%; transform:translateX(-50%); text-align: center;
+    }
+    .productListArea > ul:not(:first-child) li div div h2{
+        margin-bottom: 20px;
+    }
+    .productListArea > ul:not(:first-child) li div div p a del{
+        margin-right: 20px;
+    }
+    .productListArea > ul:nth-child(2) li div div h2 a{
+        line-height: 24px;
+    }
+    .selBox_group, .hideBox{
+        display: none;
+    }
+    .slideArea{
+        float: left; width: 100%; position: relative;
+    }   
+    .bx-wrapper{
+        box-shadow: none; border: none; background: none;
+    }
+    .slideArea ol{
+        position: absolute; width: 100%; bottom: 100px;
+        text-align: center;
+    }
+    .slideArea ol li{
+        display: inline-block; margin: 0 -3px;
+    }
+    .slideArea ol li a img{
+        width: 100%; display: block;
+    }
+    .optionArea{
+        margin-top: 50px; color: white;
+    }
+    .optionArea div{
+        padding: 10% 10% 15% 10%; background-color: #3c3c3c;
+    }
+    .optionArea div p:first-child{
+        font-size: 12px; color: #6c6c6c; margin-bottom: 25px; font-weight: 500;
+    }
+    .optionArea div h2{
+        font-size: 22px; font-weight: 500; line-height: 32px; margin-bottom: 20px;
+    }
+    .optionArea div h3{
+        font-size: 22px; font-weight: 500; margin-bottom: 35px;
+    }
+    .optionArea div h3 del{
+        margin-right: 30px;
+    }
+    .optionArea div p:last-of-type{
+        font-size: 14px; font-weight: 500; padding-right: 30%; line-height: 18px;
+        background: url('../images/shopPay.png') no-repeat right center;
+    }
+    .optionArea ul{
+        margin-top: 55px;
+    }
+    .optionArea ul li{
+        padding: 15px 12px; background-color: #6c6c6c;
+    }
+    .optionArea div a{
+        font-size: 14px; display: block;
+    }
+    .optionArea div a:first-of-type{
+        border: 1px solid #6c6c6c; 
+        background: url('../images/ico_addCart.png') no-repeat right 20px center;
+        padding: 16px 25% 16px 12px; margin: 15px 0;
+    }
+    .optionArea div a:last-child{
+        display: block; text-align: center; font-size: 14px;
+        background-color: #1c1c1c; padding: 16px 0;
+    }
+    .infoArea{
+        padding-top: 40px; font-weight: 500; margin: 0 10%;
+    }
+    .infoArea h3{
+        font-size: 15px; margin-bottom: 25px;
+    }
+    .infoArea h4{
+        font-size: 14px; color: #3c3c3c; float: left; line-height: 23px;
+    }
+    .infoArea h4:first-of-type{
+        margin-right: 60px;
+    }
+    .infoArea h4:last-of-type{
+        margin-right: 48px;
+    }
+    .infoArea p, .infoArea ul{
+        font-size: 14px; line-height: 26px; color: #3c3c3c;
+    }
+    .infoArea p:not(:last-child),
+    .infoArea ul li:last-child, .infoArea div:first-child{
+        margin-bottom: 25px;
+    }
+    .infoArea hr{
+        margin: 10px 0;
+    }
+    .recommArea{
+        margin: 12% 5% 0 5%;
+    }
+    .recommArea ul li:first-child{
+        background-color: #3c3c3c; padding: 30% 0 20px 0;
+    }
+    .recommArea ul li:first-child p{
+        padding: 30px; color: white; font-size: 15px;
+    }
+    .recommArea ul li{
+        position: relative; margin-bottom: 20px;
+    }
+    .recommArea ul li:not(:first-child) div a img{
+        width: 100%; opacity: 0.85; display: block;
+    }
+    .recommArea ul li:not(:first-child){
+        background-color: black;
+    }
+    .recommArea ul li:not(:first-child) div div{
+        position: absolute; bottom: 27px; left: 50%;
+        width: 100%; transform:translateX(-50%); text-align: center;
+    }
+    .recommArea ul li:not(:first-child) div div h2{
+        margin-bottom: 20px;
+    }
+    .recommArea ul li div div p a del{
+        font-weight: 500;
+    }
+    .recommArea ul li:not(:first-child) div div p a del{
+        margin-right: 20px;
+    }
+    .signUpArea{
+        padding: 30px 0 50px 5%; margin-bottom: 50px;
+    }
+    .signUpArea h2{
+        color: #3c3c3c; margin-bottom: 35px;
+    }
+    .signUpArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 35px;
+    }
+    .signUpArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .signUpArea form fieldset ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+    .signUpArea form fieldset ul li:last-child{
+        margin-bottom: 40px;
+    }
+    .signUpArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .signUpArea form fieldset ul li input{
+        display: block; margin-top: 30px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .signUpArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 95%; height: 48px; box-sizing: border-box;
+    }
+    .signUpArea form input[value="CREATE"]{
+        color: white;
+    }
+    .signUpArea a{
+        margin-top: 20px; font-size: 15px; color: black; border: 1px solid black;
+        width: 95%; box-sizing: border-box; text-align: center; line-height: 48px;
+    }
+    .signUpCompleteArea{
+        padding: 30px 0 0 5%;
+    }
+    .signUpCompleteArea h2{
+        color: #3c3c3c; margin-bottom: 30px;
+    }
+    .signUpCompleteArea div{
+        width: 94.9%; border: 1px solid black; text-align: center; 
+        padding: 90px 0; color: #3c3c3c; font-weight: 500;
+    }
+    .signUpCompleteArea div h3{
+        font-size: 20px; text-transform: uppercase; margin-bottom: 30px;
+    }
+    .signUpCompleteArea div{
+        font-size: 18px;
+    }
+    .signUpCompleteArea a{
+        display: block; margin-top: 30px;
+        font-size: 15px; background-color: black;
+        width: 95%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .signInArea h2{
+        color: #3c3c3c; margin-bottom: 30px;
+    }
+    .signInArea form fieldset ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .signInArea form fieldset ul li:last-child{
+        margin-bottom: 40px;
+    }
+    .signInArea form fieldset ul li label{
+        font-size: 16px; color: black;
+    }
+    .signInArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .signInArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 95%; height: 48px; box-sizing: border-box;
+    }
+    .signInArea form input[value="SIGN IN"]{
+        color: white;
+    }
+    .signInArea div a{
+        display: block; margin-top: 30px;
+        font-size: 15px; color: black; border: 1px solid black;
+        width: 95%; text-align: center; line-height: 48px;
+    }
+    .resetPWArea{
+        position: relative;
+    }
+    .resetPWArea h2{
+        color: #3c3c3c; margin-bottom: 40px;
+    }
+    .resetPWArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 30px;
+        font-weight: 400; line-height: 24px;
+    }
+    .resetPWArea form fieldset ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .resetPWArea form fieldset ul li:last-child{
+        margin-bottom: 40px;
+    }
+    .resetPWArea form fieldset ul li label{
+        font-size: 16px; color: black;
+    }
+    .resetPWArea form fieldset ul li input[type="email"]{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .resetPWArea div input{
+        border: none; font-size: 15px;
+        width: 46%; height: 48px; box-sizing: border-box;
+    }
+    .resetPWArea form div input[type="button"]{
+        background-color: black; margin-right: 2%;
+        color: white;
+    }
+    .resetPWArea form div input[type="reset"]{
+        color: black; border: 1px solid black;
+        background-color: transparent;
+    }
+    #confirmPopup{
+        position: absolute; top: 170px; left: 5%; text-align: center;
+        padding: 15px 5% 50px 5%; width: 90%; border: 1px solid black;
+        background-color: white; box-sizing: border-box; 
+    }
+    #confirmPopup input[type="button"]{
+        margin-left: 95%; width: 15px; height: 15px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    #confirmPopup h2{
+        font-size: 16px; color: #3c3c3c; margin: 30px 0 20px 0;
+        line-height: 25px; word-break: keep-all;
+    }
+    #confirmPopup a{
+        margin: 0 auto; width: 40%; min-width: 200px; padding: 15px 0;
+        display: block; background-color: black;
+        font-size: 13px; font-weight: 500; text-transform: uppercase; 
+    }
+    .myAccountEmptyArea{
+        padding: 30px 0 50px 5%;
+    }
+    .myAccountEmptyArea h2{
+        color: #3c3c3c; margin-bottom: 30px;
+    }
+    .myAccountEmptyArea div h3{
+        font-size: 16px; margin-bottom: 30px;
+    }
+    .myAccountEmptyArea div:first-of-type{
+        margin-bottom: 30px;
+    }
+    .myAccountEmptyArea div:first-of-type ul li{
+        color: #3c3c3c; display: block;
+        width: 95%; border: 1px solid black;
+        text-align: center; line-height: 48px;
+        padding-left: 10px; font-size: 15px;
+        box-sizing: border-box;
+    }
+    .myAccountEmptyArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 30px;
+    }
+    .myAccountEmptyArea div:last-of-type ul li p:last-child{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; line-height: 48px;
+        box-sizing: border-box; padding: 0 10px; font-size: 13px;
+        color: #6c6c6c; margin-bottom: 35px;
+    }
+    .myAccountEmptyArea > a:first-of-type{
+        font-size: 15px; background-color: black;
+        width: 95%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountEmptyArea > a:last-of-type{
+        display: block; margin-top: 20px;
+        color: black; border: 1px solid black;
+        font-size: 15px; background-color: transparent;
+        width: 95%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountFullArea h2{
+        font-size: 24px; color: #3c3c3c; margin-bottom: 30px;
+        font-weight: 500;
+    }
+    .myAccountFullArea h3{
+        font-size: 16px; margin-bottom: 30px;
+    }
+    .myAccountFullArea div:first-of-type{
+        margin-bottom: 30px; border: 1px solid black;
+        width: 95%; padding: 5%; box-sizing: border-box;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li{
+        font-size: 15px; font-weight: 400;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:first-of-type:after{
+        content: ''; display: block; clear: both; 
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:first-of-type{
+        float: left; width: 87%; margin-bottom: 15px;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:last-of-type{
+        margin-bottom: 15px; 
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li:first-of-type{
+        margin-bottom: 15px;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:last-child a{
+        color: #3c3c3c; font-size: 15px;
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li{
+        font-size: 16px; font-weight: 400;
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li:first-of-type{
+        text-transform: uppercase; line-height: 22px;
+    }
+    .myAccountFullArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 30px;
+    }
+    .myAccountFullArea div:last-of-type ul li p:last-child{
+        display: block; margin-top: 30px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; line-height: 48px;
+        box-sizing: border-box; padding: 0 10px; font-size: 15px;
+        color: #6c6c6c; margin-bottom: 35px;
+    }
+    .myAccountFullArea > a:first-of-type{
+        display: block; font-size: 15px; background-color: black;
+        width: 95%; box-sizing: border-box; text-align: center; line-height: 48px;
+    }
+    .myAccountFullArea > a:last-of-type{
+        display: block; margin-top: 20px; width: 95%; box-sizing: border-box;
+        color: black; border: 1px solid black; line-height: 48px;
+        font-size: 15px; background-color: transparent; text-align: center; 
+    }
+    .viewAccountArea h2{
+        color: #3c3c3c; margin-bottom: 20px;
+    }
+    .viewAccountArea div h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .viewAccountArea > a{
+        display: block; background-color: black;
+        text-align: center; min-width: 160px; width: 30%;
+        font-size: 12px; line-height: 40px; margin-bottom: 40px;
+    }
+    .viewAccountArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 30px;
+    }
+    .viewAccountArea div:last-of-type ul li:not(:last-of-type) p:last-child{
+        display: block; margin-top: 30px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c; margin-bottom: 40px;
+    }
+    .viewAccountArea div:last-of-type ul li:last-child{
+        border: 1px solid black; width: 95%;
+        padding: 10px 10px 20px 25px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .viewAccountArea div:last-of-type ul li:last-child p:first-child{
+        margin-top: 5px;
+    }
+    .viewAccountArea div:last-of-type ul li:last-of-type p:last-child{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 96.5%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c;
+    }
+    .viewAccountArea div ul li:last-child input[type="button"]{
+        position: absolute; top: 10px; right: 10px;
+        width: 13px; height: 13px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    .viewAccountArea div a{
+        display: block; margin-top: 40px;
+        font-size: 15px; background-color: black;
+        width: 95%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    #deletePopup{
+        position: absolute; top: 90%; left: 5%;
+        padding: 15px 0 60px 0; width: 90.3%;
+        border: 1px solid black;
+        box-sizing: border-box; text-align: center;
+        background-color: white;
+    }
+    #deletePopup h2{
+        font-size: 18px; color: #3c3c3c; margin: 45px 0 30px 0; 
+    }
+    #deletePopup div{
+        padding: 0 20%; text-align: center; margin: 0 auto;
+    }
+    #deletePopup div:after{
+        content: ''; display: block; clear: both;
+    }
+    #deletePopup div a{
+        float: left; display: block;
+        width: 43.5%; line-height: 42.5px;
+        color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box;
+    }
+    #deletePopup div input[type="button"]{
+        float: right; width: 43.5%; height: 45px; color: white;
+        background-color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500; box-sizing: border-box;
+    }
+    .viewAccountEmptyArea h2{
+        color: #3c3c3c; margin-bottom: 20px;
+    }
+    .viewAccountEmptyArea div h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .viewAccountEmptyArea > a{
+        display: block; background-color: black;
+        text-align: center; min-width: 160px; width: 30%;
+        font-size: 12px; line-height: 40px; margin-bottom: 40px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 20px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:not(:last-of-type) p:last-child{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c; margin-bottom: 40px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-child{
+        border: 1px solid black; width: 95%; padding: 10px 10px 20px 25px;
+        box-sizing: border-box; position: relative;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-child p:first-child{
+        margin-top: 5px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-of-type a{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 96.5%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 16px; text-align: center;
+        color: black; text-transform: uppercase;
+    }
+    .viewAccountEmptyArea div > a{
+        display: block; margin-top: 40px;
+        font-size: 15px; background-color: black;
+        width: 95%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountEditArea{
+        position: relative;
+    }
+    .myAccountEditArea h2{
+        color: #3c3c3c; margin-bottom: 30px;
+    }
+    .myAccountEditArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 30px;
+    }
+    .myAccountEditArea form fieldset legend{
+        font-size: 16px; margin-bottom: 30px;
+    }
+    .myAccountEditArea form fieldset ul li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .myAccountEditArea form fieldset ul li:last-child{
+        margin-bottom: 40px;
+    }
+    .myAccountEditArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .myAccountEditArea form fieldset ul li input{
+        display: block; margin-top: 30px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px; color: #6c6c6c;
+    }
+    .myAccountEditArea form div input[type='button']{
+        border: none; background-color: black; font-size: 15px;
+        width: 95%; height: 48px; box-sizing: border-box;
+        color: white;
+    }
+    .myAccountEditArea form div input[type='reset']{
+        display: block; margin-top: 30px;
+        font-size: 15px; color: black; border: 1px solid black;
+        background-color: transparent;
+        width: 95%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    #editPopup{
+        margin: 40px 0 50px 0;
+        position: absolute; top: 75%; left: 5%;
+        padding: 15px 0 50px 0; width: 90.23%;
+        border: 1px solid black; background-color: white;
+        box-sizing: border-box; text-align: center;
+    }
+    #editPopup input[type="button"]{
+        margin-left: 90%;
+        width: 15px; height: 15px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    #editPopup h2{
+        font-size: 16px; color: #3c3c3c;
+        margin: 30px 0 20px 0; line-height: 25px;
+        word-break: keep-all;
+    }
+    #editPopup a{
+        margin: 0 auto; width: 40%; padding: 15px 0;
+        display: block; background-color: black;
+        font-size: 13px; font-weight: 500;
+        text-transform: uppercase; 
+    }
+    .myAccountEditEmptyArea h2{
+        color: #3c3c3c; margin-bottom: 35px;
+    }
+    .myAccountEditEmptyArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 35px; font-weight: 400;
+    }
+    .myAccountEditEmptyArea form fieldset legend{
+        font-size: 16px; margin-bottom: 30px;
+    }
+    .myAccountEditEmptyArea form fieldset ul li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .myAccountEditEmptyArea form fieldset ul li:last-child{
+        margin-bottom: 40px;
+    }
+    .myAccountEditEmptyArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .myAccountEditEmptyArea form fieldset ul li input{
+        display: block; margin-top: 30px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px; color: #6c6c6c;
+    }
+    .myAccountEditEmptyArea form div input[type='button']{
+        background-color: black; font-size: 15px;
+        width: 95%; height: 48px; box-sizing: border-box;
+        color: white; border: 1px solid black;
+    }
+    .myAccountEditEmptyArea form div input[type='reset']{
+        display: block; margin-top: 30px;
+        font-size: 15px; color: black; border: 1px solid black;
+        width: 95%; box-sizing: border-box; background-color: transparent;
+        text-align: center; line-height: 48px;
+    }
+    .orderHistoryArea h2{
+        color: #3c3c3c; margin-bottom: 30px;
+    }
+    .orderHistoryArea > div{
+        width: 100%; padding: 30px; font-weight: 400; box-sizing: border-box;
+        border: 1px solid black; text-transform: uppercase;
+    }
+    .orderHistoryArea div ul:first-child{
+        margin-bottom: 25px;
+    }
+    .orderHistoryArea div ul:first-child li:first-child{
+        font-size: 18px;
+    }
+    .orderHistoryArea div ul:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div ul:first-child li:first-child{
+        font-size: 16px; float: right;
+    }
+    .orderHistoryArea div img{
+        display: block; width: 100%; margin-bottom: 30px;
+    }
+    .orderHistoryArea div div{
+        width: 100%; margin-right: 4%;
+    }
+    .orderHistoryArea div div h3{
+        margin-bottom: 8%; font-size: 16px; line-height: 22px;
+    }
+    .orderHistoryArea div div ul:not(:last-child){
+        color: #6c6c6c;
+    }
+    .orderHistoryArea div div:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div div ul:first-of-type{
+        height: 30px;
+    }
+    .orderHistoryArea div div ul:first-of-type li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:first-of-type li:last-child{
+        float: right; width: 50%; font-size: 16px; text-align: right;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2){
+        height: 15px;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2) li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2) li:last-child{
+        float: right; width: 50%; text-align: right; font-size: 16px;
+    }
+    .orderHistoryArea div div hr{
+        width: 100%;
+    }
+    .orderHistoryArea div div ul:last-of-type{
+        margin-bottom: 50px;
+    }
+    .orderHistoryArea div div ul:last-of-type li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:last-of-type li:last-child{
+        float: right; width: 50%; font-size: 16px; font-weight: 500;
+        text-align: right;
+    }
+    .orderHistoryArea div ul:last-child{
+        clear: both; font-size: 14px; color: #6c6c6c;
+    }
+    .orderHistoryArea div ul:last-child li p:first-child{
+        margin-bottom: 20px;
+    }
+    .orderHistoryArea div ul:last-child li:first-child p:last-child{
+        margin-bottom: 35px;
+    }
+    .orderHistoryArea div ul:last-child li p:last-child{
+        display: block; border: none;
+        background-color: #f2f2f2;
+        line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px; color: #6c6c6c; 
+    }
+    .orderHistoryArea a{
+        display: block; margin-top: 40px;
+        font-size: 15px; background-color: black;
+        width: 100%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .aboutArea{
+        padding: 30px 5% 0 5%;
+    }
+    .aboutArea h2{
+        font-size: 24px; font-weight: 500; margin-bottom: 50px; color: #3c3c3c;
+    }
+    .aboutArea > p{
+        font-size: 16px; font-weight: 400; text-transform: uppercase; margin-bottom: 40px;
+    }
+    .aboutArea div img{
+        width: 100%; display: block; margin-bottom: 35px;
+    }
+    .aboutArea div p, .aboutArea ul li{
+        font-size: 16px; font-weight: 400; line-height: 30px; color: #6c6c6c;
+    }
+    .aboutArea ul{
+        margin-top: 20px;
+    }
+    .aboutArea ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .aboutArea ul li:last-child{
+        margin-bottom: 50px;
+    }
+    .contactUsArea > h2{
+        color: #3c3c3c; margin-bottom: 50px;
+    }
+    .contactUsArea > p{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 60px;
+        font-weight: 400; line-height: 36px; width: 100%;
+    }
+    .contactUsArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .contactUsArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .contactUsArea form fieldset ul li:last-child{
+        margin-bottom: 50px;
+    }
+    .contactUsArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .contactUsArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 95%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .contactUsArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 95%; height: 48px; box-sizing: border-box;
+    }
+    .contactUsArea form input[value="SEND"]{
+        color: white;
+    }
+    #sendPopup{
+        position: absolute; top: 90%; left: 5%;
+        padding: 15px 0 70px 0;
+        border: 1px solid black; width: 91%;
+        text-align: center;
+        background-color: white; box-sizing: border-box;
+    }
+    #sendPopup input[type="button"]{
+        margin-left: 90%;
+        width: 15px; height: 15px; border: none;
+        background: url('images/ico_close_black.png') center no-repeat;
+    }
+    #sendPopup h2{
+        margin-top: 50px; font-size: 25px; font-weight: 500;
+        text-transform: uppercase; color: #3c3c3c;
+        margin-bottom: 30px;
+    }
+    #sendPopup p{
+        font-size: 16px; font-weight: 500; color: #3c3c3c;
+    }
+    .cartEmptyArea h2{
+        margin-bottom: 35px; color: #3c3c3c; text-transform: uppercase;
+    }
+    .cartEmptyArea{
+        content: ''; display: block; clear: both;
+    }
+    .cartEmptyArea img{
+        display: block; width: 100%; margin-bottom: 40px;
+    }
+    .cartEmptyArea div{
+        width: 100%;
+    }
+    .cartEmptyArea div p{
+        font-size: 15px; line-height: 48px;
+        text-align: center;
+        border: 1px solid black; box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+    .cartEmptyArea div a{
+        line-height: 48px; display: block;
+        background-color: black; box-sizing: border-box;
+        text-align: center;
+    }
+    .confirmArea h2{
+        font-size: 18px; text-transform: uppercase; color: #3c3c3c;
+        margin-bottom: 40px; line-height: 30px;
+    }
+    .confirmArea > p, 
+    .confirmArea div h3{
+        font-size: 16px; font-weight: 400; text-transform: uppercase;
+    }
+    .confirmArea > div h3{
+        margin-bottom: 20px; line-height: 24px;
+    }
+    .confirmArea > div:first-of-type{
+        margin-top: 50px; padding: 20px; width: 100%;
+        border: 1px solid black; box-sizing: border-box;
+        margin-bottom: 35px;
+    }
+    .confirmArea > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type img{
+        display: block; width: 100%; margin-bottom: 30px;
+    }
+    .confirmArea > div:first-of-type > div{
+        float: left; width: 100%;
+    }
+    .confirmArea > div:first-of-type > div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type > div > div:first-of-type p:first-child{
+        float: left; width: 50%; font-size: 20px; font-weight: 400; 
+    }
+    .confirmArea > div:first-of-type > div > div:first-of-type p:last-child{
+        float: right; width: 50%; text-align: right; font-size: 20px; font-weight: 400;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type{
+        margin-top: 30px;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type p:first-child{
+        float: left; width: 50%; font-size: 14px; color: #7d7d7d;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type p:last-child{
+        float: right; width: 50%; text-align: right;
+    }
+    .confirmArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea ul{
+        width: 100%;
+    }
+    .confirmArea ul li:first-child{
+        font-size: 14px; text-transform: uppercase; font-weight: 400;
+        float: left; width: 30%; line-height: 22px;
+    }
+    .confirmArea ul li:last-child{
+        font-size: 22px; font-weight: 500;
+        float: right;
+    }
+    .confirmArea ul:not(:first-of-type) li{
+        margin-top: 25px;
+    }
+    .confirmArea ul:not(:last-child) li:first-child{
+        color: #7d7d7d;
+    }
+    .confirmArea ul:last-of-type li:first-child{
+        color: black;
+    }
+    .confirmArea ul:last-of-type li:last-child{
+        font-weight: 600; 
+    }
+    .confirmArea > div:last-child a{
+        font-size: 15px; font-weight: 400; text-transform: uppercase; 
+        display: block; width: 100%; text-align: center;
+        line-height: 48px; box-sizing: border-box;
+    }
+    .confirmArea div:last-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea div:last-child a:first-child{
+        background-color: black;
+        border: 1px solid black; margin-top: 50px;
+    }
+    .confirmArea div:last-child a:last-child{
+        border: 1px solid black; color: black;
+        margin-top: 20px;
+    }
+    .cartArea{
+        padding: 30px 5% 0 5%;
+    }
+    .cartArea > div:first-child{
+        width: 100%; margin-bottom: 40px;
+    }
+    .cartArea > div:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea > div:first-child h2{
+        font-size: 24px; color: #3c3c3c;
+        font-weight: 500; float: left; width: 50%;
+    }
+    .cartArea > div:first-child > input[value="Remove all"]:first-of-type{
+        float: right; width: 105px; line-height: 40px;
+        background-color: black; color: white; border: none;
+        font-size: 12px; font-weight: 400;
+    }
+    .cartArea > img{
+        display: none;
+    }
+    .cartArea section{
+        float: left; width: 100%;
+    }
+    .cartArea section > div:first-child{
+        padding: 20px; border: 1px solid black; margin-bottom: 30px;
+    }
+    .cartArea section > div:first-child h3{
+        font-size: 16px; font-weight: 400; text-transform: uppercase;
+        line-height: 24px; float: left; width: 95%; margin-bottom: 25px;
+    }
+    .cartArea section > div:first-child .openPop{
+        position: absolute; width: 13px; height: 13px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+        margin-top: 5px;
+    }
+    .cartArea section > div:first-child > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child > div img{
+        width: 100%; display: block; margin-bottom: 25px;
+    }
+    .cartArea section > div:first-child > div > p{
+        float: left; width: 10%; font-size: 20px; font-weight: 400;
+    }
+    .cartArea section > div:first-child > div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child > div > div{
+        float: right; width: 40%; text-align: right;
+    }
+    .cartArea section > div:first-child > div > div input[value="-"]{
+        background: url('../images/btn_minus.png') no-repeat center; border: none; 
+    }
+    .cartArea section > div:first-child > div > div input[type='number']{
+        border: none; text-align: center; font-size: 20px;
+    }
+    .cartArea section > div:first-child > div > div input[type='number']::-webkit-outer-spin-button,
+    .cartArea section > div:first-child > div > div input[type='number']::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .cartArea section > div:first-child > div > div input[value="+"]{
+        background: url('../images/btn_plus.png') no-repeat center; border: none;
+    }
+    .cartArea section > div:nth-child(2){
+        margin-bottom: 40px;
+    }
+    .cartArea section > div:nth-child(2):after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:nth-child(2) p:first-child{
+        float: left; font-size: 14px; font-weight: 400;
+        color: #7d7d7d; line-height: 22px;
+    }
+    .cartArea section > div:nth-child(2) strong{
+        float: right; font-size: 22px; font-weight: 600;
+    }
+    .cartArea section > p{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+        text-transform: uppercase;
+    }
+    .cartArea section > input[type="text"]{
+        margin-top: 20px; width: 100%; padding: 5px 5px 80px 5px;
+        box-sizing: border-box; border: none; margin-bottom: 35px;
+        background-color: #f2f2f2; font-size: 16px; 
+    }
+    .cartArea section > a{
+        width: 100%; line-height: 48px; color: black;
+        border: 1px solid black; display: block;
+        box-sizing: border-box; text-align: center; margin-bottom: 20px;
+    }
+    .cartArea section > div:last-of-type:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:last-of-type{
+        margin-bottom: 50px;
+    }
+    .cartArea section > div:last-of-type > p{
+        float: left; width: 70%; font-size: 14px; font-weight: 400; 
+        text-transform: uppercase; color: #7d7d7d; line-height: 22px;
+    }
+    .cartArea section > div:last-of-type > img{
+        float: right; width: 69px; display: block;
+    }
+    #cartPopup{
+        position: absolute; top: 180px; left: 5%;
+        padding: 15px 5% 70px 5%;
+        border: 1px solid black; width: 90%;
+        box-sizing: border-box; text-align: center;
+        background-color: white;
+    }
+    #cartPopup h2{
+        font-size: 18px; color: #3c3c3c;
+        margin: 45px 0 30px 0; line-height: 26px;
+    }
+    #cartPopup div{
+        padding: 0 10%; text-align: center; margin: 0 auto;
+    }
+    #cartPopup div:after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPopup div a{
+        float: left; display: block;
+        width: 45%; line-height: 42.5px;
+        color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box;
+    }
+    #cartPopup div input[type="button"]{
+        float: right; width: 45%; height: 45px; color: white;
+        background-color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box; 
+    }
+    .paymentArea{
+        padding: 30px 5% 0 5%; text-transform: uppercase;
+    }
+    .paymentArea h2{
+        margin-bottom: 50px; color: #3c3c3c;
+    }
+    .paymentArea > h3{
+        font-size: 18px; font-weight: 400; margin-bottom: 50px; color: #7d7d7d;
+    }
+    .PaymentDetails > div{
+        padding: 20px; border: 1px solid black; margin-bottom: 30px;
+    }
+    .PaymentDetails > div h3{
+        font-size: 16px; font-weight: 400; margin-bottom: 20px; line-height: 25px;
+    }
+    .PaymentDetails > div div:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > div div img{ 
+        width: 100%; display: block; margin-bottom: 20px;
+    }
+    .PaymentDetails > div div div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > div div div ul li:first-child{
+        float: left; 
+    }
+    .PaymentDetails > div div div ul li:last-child{
+        float: right;
+    }
+    .PaymentDetails > div div div ul:first-child{
+        margin-bottom: 30px;
+    }
+    .PaymentDetails > div div div ul:first-child li{
+        font-size: 20px; font-weight: 400;
+    }
+    .PaymentDetails > div div div ul:first-child li:last-child{
+        text-transform: none;
+    }
+    .PaymentDetails > div div div ul:last-child li:first-child{
+        font-size: 14px; font-weight: 400; color: #7d7d7d; padding-top: 8px;
+    }
+    .PaymentDetails > div div div ul:last-child li:last-child{
+        font-size: 22px; font-weight: 500; 
+    }
+    .PaymentDetails > ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > ul{
+        margin-bottom: 50px;
+    }
+    .PaymentDetails > ul li:first-child{
+        float: left;
+    }
+    .PaymentDetails > ul li:last-child{
+        float: right;
+    }
+    .PaymentDetails > ul:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .PaymentDetails > ul:not(:last-child) li:first-child,
+    .paymentArea section:last-child form fieldset label{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+    }
+    .PaymentDetails > ul:not(:last-child) li:last-child{
+        font-size: 22px; font-weight: 500; 
+    }
+    .PaymentDetails > ul:last-child li:first-child{
+        font-size: 14px; font-weight: 400;
+    }
+    .PaymentDetails > ul:last-child li:last-child{
+        font-size: 22px; font-weight: 600;
+    }
+    .paymentArea section:last-child p{
+        font-size: 16px; font-weight: 400; margin-bottom: 40px;
+    }
+    .paymentArea section:last-child form fieldset > input[type="email"],
+    .paymentArea section:last-child form fieldset ul li input{
+        display: block; background-color: #f2f2f2; border: none;
+        height: 48px; margin-top: 20px; padding-left: 10px;
+        padding-left: 10px;
+    }
+    .paymentArea section:last-child form fieldset > input[type="email"]{
+        margin-bottom: 10px; width: 100%; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p{
+        text-align: right;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p input[type="checkbox"]{
+        appearance: none; width: 15px; height: 15px;
+        background: url('../images/ico_check.png') center center;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p input[type="checkbox"]:checked{
+        background: url('../images/ico_checked.png') center center;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:first-child select{
+        display: block; border: none; width: 100%; height: 48px;
+        background-color: #f2f2f2; padding-left: 10px;
+        color: #7d7d7d; font-size: 14px; margin: 20px 0 35px 0;
+        box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:not(:nth-child(3)):not(:nth-child(4)) input{
+        width: 100%; margin-bottom: 35px; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(3){
+        float: left; width: 44%; margin-right: 2%;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(3) input,
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(4) input{
+        width: 100%; margin-bottom: 35px; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(4){
+        float: right; width: 44%;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(5):before{
+        content: ''; display: block; clear: both;
+    }
+    .paymentArea section:last-child form > input{
+        width: 100%; height: 48px; border: none;
+        color: white; background-color: black;
+        font-size: 15px; font-weight: 400; text-transform: uppercase;
+        box-sizing: border-box; display: block;
+        margin-bottom: 50px;
+    }
+    .payment2Area{
+        padding: 30px 5% 0 5%; text-transform: uppercase;
+    }
+    .payment2Area h2{
+        margin-bottom: 50px; color: #3c3c3c;
+    }
+    .payment2Area > h3{
+        font-size: 18px; font-weight: 400; margin-bottom: 50px; color: #7d7d7d;
+    }
+    .payment2Area section:last-of-type h3{
+        font-size: 16px; font-weight: 400; margin-bottom: 50px;
+    }
+    .payment2Area section:last-of-type fieldset p{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+        margin-bottom: 20px;
+    }
+    .payment2Area section:last-of-type fieldset:first-child{
+        margin-bottom: 40px;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div{
+        display: flex; flex-flow: wrap; justify-content: space-between
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="text"]{
+        width: 100%; height: 48px; margin-bottom: 15px;
+        padding-left: 10px; box-sizing: border-box;
+        background-color: #f2f2f2; border: none;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]{
+        width: 30%; height: 48px; border: 1px solid black;
+        background: no-repeat center center;
+        cursor: pointer; appearance: none;
+        box-sizing: border-box; background-size: 70%;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(2){
+        background-image: url('../images/ico_paypal.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(3){
+        background-image: url('../images/ico_master.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(4){
+        background-image: url('../images/ico_visa.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:checked{
+        border: 3px solid #4cc7a3;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li label{
+        margin-bottom: 20px; display: block;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li select{
+        display: block; width: 100%; height: 48px;
+        background-color: #f2f2f2; border: none;
+        padding: 0 10px; color: #7d7d7d; box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul:last-of-type li:last-child input{
+        width: 100%; height: 48px; background-color: #f2f2f2;
+        border: none; box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .payment2Area section:last-of-type fieldset:last-of-type > input[type="submit"]{
+        display: block; background-color: black; color: white; 
+        width: 100%; height: 48px; border: none; 
+        font-size: 15px; font-weight: 400;
+        text-align: center; text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+    .payment2Area section:last-of-type > ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .payment2Area section:last-of-type > ul{
+        margin-bottom: 100px; display: flex; justify-content: flex-start;
+    }
+    .payment2Area section:last-of-type > ul li{
+        width: 25%;
+    }
+    .payment2Area section:last-of-type > ul li a{
+        color: #7d7d7d; font-size: 10px; text-decoration: underline;
+    }
+    .shippingReturnArea{
+        margin-bottom: 50px;
+    }
+    .shippingReturnArea h2{
+        color: #3c3c3c; margin-bottom: 20px; text-transform: uppercase;
+    }
+    .shippingReturnArea h3{
+        font-size: 16px; color: black; font-weight: 400; margin-bottom: 20px;
+    }
+    .shippingReturnArea p{
+        font-size: 18px; font-weight: 400;
+        color: #6c6c6c; margin-bottom: 20px;
+    }
+    .shippingReturnArea ul{
+        font-size: 14px; color: #6c6c6c; font-weight: 400; width: 95%; 
+    }
+    .shippingReturnArea ul li{
+        line-height: 24px;
+    }
+    .shippingReturnArea ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .shippingReturnArea ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .termsServiceArea{
+        padding: 50px 0 0 5%; margin-bottom: 50px;
+    }
+    .termsServiceArea h2{
+        color: #3c3c3c; margin-bottom: 20px; text-transform: uppercase;
+    }
+    .termsServiceArea h3{
+        font-size: 16px; color: black; font-weight: 400; margin-bottom: 20px;
+    }
+    .termsServiceArea p{
+        font-size: 18px; font-weight: 400; color: #6c6c6c; margin-bottom: 20px;
+    }
+    .termsServiceArea ul{
+        font-size: 14px; color: #6c6c6c; font-weight: 400; width: 95%; 
+    }
+    .termsServiceArea ul li{
+        line-height: 24px;
+    }
+    .termsServiceArea ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .termsServiceArea ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .PrivacyArea, .refundArea{
+        padding: 50px 5% 0 5%; margin-bottom: 50px;
+    }
+    .PrivacyArea h2{
+        font-size: 24px; text-transform: uppercase;
+        font-weight: 500; margin-bottom: 30px; color: #3c3c3c;
+    }
+    .PrivacyArea article h3{
+        font-size: 14px; font-weight: 400; text-transform: uppercase; color: black;
+        margin-bottom: 30px;
+    }
+    .PrivacyArea article p{
+        color: #7d7d7d; font-weight: 400;
+    }
+    .PrivacyArea article:first-child p{
+        font-size: 14px; line-height: 25px;
+    }
+    .PrivacyArea article:not(:first-child) h3{
+        margin-top: 30px;
+    }
+    .PrivacyArea article:not(:first-child) p{
+        font-size: 14px; line-height: 24px; margin-bottom: 20px;
+    }
+    .PrivacyArea article:nth-child(2) p:nth-of-type(2){
+        font-size: 16px;
+    }
+    .PrivacyArea article ul li{
+        font-size: 14px; line-height: 24px; color: #7d7d7d;
+    }
+    .PrivacyArea article ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .PrivacyArea article h4{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+        margin: 30px 0 20px 0; line-height: 30px;
+    }
+    .refundArea section:first-child h2{
+        text-transform: uppercase; margin-bottom: 30px; color: #3c3c3c;
+    }
+    .refundArea section:first-child h3{
+        font-size: 16px; text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .refundArea section p, .refundArea section ul{
+        color: #7d7d7d;
+    }
+    .refundArea section:first-child p{
+        font-size: 16px; line-height: 30px;
+    }
+    .refundArea section:first-child p:first-child{
+        margin-bottom: 25px;
+    }
+    .refundArea section:not(:first-child) h3{
+        font-size: 22px; color: #7d7d7d; font-weight: 400;
+        margin: 40px 0 25px 0;
+    }
+    .refundArea section:not(:first-child) p, 
+    .refundArea section ul li{
+        line-height: 24px;
+    }
+    .refundArea section:nth-child(2) p:first-of-type,
+    .refundArea section ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+/* mobile */
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    #loginPopup{
+        padding: 75px 2.5%; width: 50%; height: 50%; background-color: white;
+        box-sizing: border-box; text-align: center;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+        position: fixed; left: 25%; top: 25%; /*min-width: 440px; min-height: 340px;*/
+        z-index: 1000; display: none;
+    }
+    #loginPopup.active, .productListArea img,
+    .signInArea div, #confirmPopup a,
+    .myAccountEmptyArea div:last-of-type ul li p:last-child,
+    .myAccountEmptyArea a:first-of-type,
+    .myAccountEmptyArea a:last-of-type, .myAccountFullArea > a:first-of-type,
+    .myAccountFullArea > a:last-of-type,
+    .viewAccountArea div:last-of-type ul li:not(:last-of-type) p:last-child,
+    .viewAccountArea div:last-of-type ul li:last-of-type p:last-child,
+    .viewAccountArea div a, #deletePopup div a,
+    .viewAccountEmptyArea div:last-of-type ul li:not(:last-of-type) p:last-child,
+    .viewAccountEmptyArea div > a, .myAccountEditArea form fieldset ul li input,
+    #editPopup a{
+        display: block;
+    }
+    .introArea div p:first-child,
+    .productListArea > div > p
+    .productListArea > div div ul li a{
+        font-size: 12px; font-family: 400;
+    }
+    #loginPopup h2,
+    .productListArea > div > p,
+    .signUpCompleteArea div h3, #confirmPopup a,
+    #editPopup a, .aboutArea > p, .cartArea section > p,
+    .paymentArea, .payment2Area, .confirmArea h2,
+    .shippingReturnArea h2, .termsServiceArea h2,
+    .PrivacyArea h2, .PrivacyArea article h3, .refundArea section:first-child h2{
+        text-transform: uppercase;
+    }
+    .signUpArea h3, .signUpArea form fieldset legend,
+    .signUpArea form fieldset ul li label, .signUpArea > input, .signUpArea a,
+    .signInArea form fieldset ul li label, .signInArea > input, .signInArea a,
+    .resetPWArea h3, .resetPWArea > input, .signUpArea a,
+    .myAccountEmptyArea div, .myAccountFullArea div,
+    .viewAccountArea div, .viewAccountEmptyArea div,
+    .myAccountEditArea h3, .myAccountEditArea form fieldset legend,
+    .myAccountEditArea form fieldset ul li label,
+    .myAccountEditArea > input, .myAccountEditArea a,
+    .myAccountEditEmptyArea h3, .myAccountEditEmptyArea form fieldset legend,
+    .myAccountEditEmptyArea form fieldset ul li label, .myAccountEditEmptyArea > input,
+    .myAccountEditArea a, .myAccountEditEmptyArea h3, .contactUsArea > p,
+    .contactUsArea form fieldset legend, .contactUsArea form fieldset ul li label,
+    .contactUsArea > input, .contactUsArea a, #cartPopup div a{
+        font-weight: 400;
+    }
+    .signUpArea, .signUpCompleteArea,
+    .signInArea, .resetPWArea, .myAccountEmptyArea,
+    .myAccountFullArea, .viewAccountArea,
+    .viewAccountEmptyArea, .myAccountEditArea,
+    .myAccountEditEmptyArea, .orderHistoryArea,
+    .contactUsArea, .cartEmptyArea, .cartArea,
+    .confirmArea, .shippingReturnArea, .termsServiceArea,
+    .PrivacyArea, .refundArea{
+        margin: 50px 5% 100px 5%;
+    }
+    .signUpArea h2, .signUpCompleteArea h2,
+    .signInArea h2, .resetPWArea h2,
+    .myAccountEmptyArea h2, .myAccountFullArea h2,
+    .viewAccountArea h2, .viewAccountEmptyArea h2,
+    .myAccountEditArea h2, .myAccountEditEmptyArea h2,
+    .orderHistoryArea h2, .aboutArea h2, .contactUsArea > h2,
+    .cartEmptyArea h2, .cartArea > div:first-child h2,
+    .paymentArea h2, .paymentArea h2, .payment2Area h2,
+    .confirmArea h2, .shippingReturnArea h2, .termsServiceArea h2,
+    .PrivacyArea h2, .refundArea section:first-child h2{
+        font-size: 24px; font-weight: 500;
+    }
+    #loginPopup h2{
+        font-size: 30px; font-weight: 400; color: #1c1c1c; margin-bottom: 35px;
+    }
+    #loginPopup h2 input.closeBtn{
+        width: 15px; float: right; line-height: 27px; height: 15px;
+        background: url('../images/ico_close_black.png') center center no-repeat;
+        border: none; text-indent: -9999px;
+        margin-top: -50px;
+    }
+    #loginPopup p{
+        font-size: 18px; font-weight: 400; color: #444444; margin-bottom: 50px;
+        line-height: normal; width: 80%; margin: 0 auto;
+        line-height: 30px;
+    }
+    #loginPopup a.boxBtn{
+        line-height: 50px; width: 25%; margin: 25px auto; font-size: 15px;
+        background-color: black; display: block;
+    }
+    .contentsArea{
+        margin: 30px 5% 50px 5%;
+    }
+    .contentsArea > div:first-child{
+        position: relative;
+    }
+    .contentsArea div img{
+        width: 100%;
+    }
+    .contentsArea > div:first-child div{
+        position: absolute; top: 0; left: 0;
+        width: 82%; margin: 35% 0 0 9%;
+        padding: 10.84% 0 4.87% 0;
+        text-align: center;
+        border: 1px solid white; 
+    }
+    .contentsArea > div:first-child div h2{
+        margin-bottom: 4.05%; 
+    }
+    .contentsArea > div:first-child div h2 a{
+        display: block; font-size: 35px; font-weight: 500;
+    }
+    .contentsArea > div:first-child div p a{
+        color: white; text-transform: none;
+        font-size: 18px; font-family: 400; padding-right: 20px;
+        background: url('../images/ico_arrow.png') right no-repeat;
+    }
+    .contentsArea > div:last-child{
+       position: relative; margin-top: 100px; 
+    }
+    .contentsArea > div:last-child > div{
+        position: absolute; top: 0; left: 0;
+        width: 82%; margin: 35% 0 0 9%;
+        padding: 10.84% 0 4.87% 0;
+        text-align: center;
+        border: 1px solid white;
+    }
+    .contentsArea > div:last-child div h2{
+        margin-bottom: 4.05%;
+    }
+    .contentsArea > div:last-child div h2 a{
+        display: block; font-size: 35px; font-weight: 500;
+    }
+    .contentsArea > div:last-child div p a{
+        color: white; text-transform: none;
+        font-size: 18px; font-family: 400; padding-right: 20px;
+        background: url('../images/ico_arrow.png') right no-repeat;
+    }
+    .introArea{
+        max-width: 1540px; margin: 0 auto; padding: 0 5% 55px 5%;
+    }
+    .introArea:after{
+        content: ''; display: block; clear: both;
+    }
+    .introArea div{
+        float: left; width: 20%; margin-top: 30%;
+    }
+    .introArea div p:first-child{
+        margin-bottom: 20px;
+    }
+    .introArea div h2{
+        font-size: 24px; font-family: 500; margin-bottom: 47px;
+    }
+    .introArea div p:last-child{
+        font-size: 15px; font-family: 300;
+    }
+    .introArea img{
+        margin: 125px 0 0 29.9%; width: 50%;
+    }
+    .productListArea{
+        margin: 0 auto; padding: 0 5% 0 5%;
+    }
+    .productListArea > div{
+        padding: 60px 1% 0 1%; margin-bottom: 30px;
+        background-color: #3c3c3c; 
+        height: 250px; width: 21.5%;
+    }
+    .productListArea > div > p{
+        color: #6c6c6c; margin-bottom: 48px;
+    }
+    .productListArea > div > div{
+        position: relative;
+    }
+    .productListArea > div div > p{
+        padding: 18px 0 18px 20px;
+        background: url('../images/triangle_bottom.png') no-repeat right 20px center;
+        background-color: #6c6c6c;
+        font-size: 12px; font-weight: 400;
+    }
+    .productListArea > div div ul{
+        position: absolute; left: 0;
+        z-index: 1; width: 100%;
+    }
+    .productListArea > div div ul li a{
+        padding: 18px 0 18px 20px;
+        display: block; background-color: #6c6c6c; padding-left: 20px;      
+    }
+    .productListArea > div div ul li:first-child a{
+        background: url('../images/triangle_top.png') no-repeat right 20px center;
+        background-color: #6c6c6c;
+    }
+    .productListArea > div div ul li a{
+        background-color: black; 
+    }
+    .productListArea > ul{
+        float: left; width: 23.5%; margin-bottom: 50px;
+    }
+    .productListArea > ul li div div h2 a{
+        font-size: 12px; font-weight: 600; line-height: 24px;
+    }
+    .productListArea > ul li div div p a{
+        font-size: 15px; font-weight: 700;
+    }
+    .productListArea > ul:nth-child(2),
+    .productListArea > ul:nth-child(3),
+    .productListArea > ul:nth-child(4){
+        margin-right: 2%;
+    }    
+    .productListArea > ul:nth-child(3),
+    .productListArea > ul:last-child{
+        margin-top: -255px;
+    }
+    .productListArea > ul:nth-child(4){
+        margin-top: -340px;
+    }
+    .productListArea > ul:not(:first-child) li{
+        position: relative;
+    }
+    .productListArea > ul:not(:first-child) li:not(:last-child){
+        margin-bottom: 7%;
+    }
+    .productListArea > ul:not(:first-child) li div a img{
+        width: 100%;
+    }
+    .productListArea > ul:not(:first-child) li{
+        background-color: black;
+    }
+    .productListArea > ul:not(:first-child) li div a img{
+        opacity: 0.85;
+    }
+    .productListArea > ul:not(:first-child) li div div{
+        position: absolute; bottom: 27px; left: 50%;
+        width: 100%; transform:translateX(-50%); text-align: center;
+    }
+    .productListArea > ul:not(:first-child) li div div h2{
+        margin-bottom: 20px;
+    }
+    .productListArea > ul li div div p a del{
+        font-weight: 500;
+    }
+    .productListArea > ul:not(:first-child) li div div p a del{
+        margin-right: 20px;
+    }
+    .selBox_group, .hideBox{
+        display: none;
+    }
+    .slideArea{
+        float: left; width: 45%;
+        padding-left: 5%; padding-top : 50px; position: relative;
+    }
+    .bx-wrapper{
+        box-shadow: none; border: none; background: none;
+    }
+    .slideArea ol{
+        position: absolute; width: 90%; bottom: 100px; text-align: center;
+    }
+    .slideArea ol li{
+        display: inline-block; margin: 0 -3px;
+    }
+    .slideArea ol li a img{
+        width: 100%; display: block;
+    }
+    .optionArea{
+        float: right; width: 42%; 
+        margin: 120px 5% 0 3%; color: white;
+    }
+    .optionArea div{
+        padding: 20% 10% 25% 10%; background-color: #3c3c3c;
+    }
+    .optionArea div p:first-child{
+        font-size: 12px; color: #6c6c6c; margin-bottom: 25px;
+        font-weight: 500;
+    }
+    .optionArea div h2{
+        font-size: 22px; font-weight: 500; line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .optionArea div h3{
+        font-size: 22px; font-weight: 500; margin-bottom: 35px;
+    }
+    .optionArea div h3 del{
+        margin-right: 30px;
+    }
+    .optionArea div p:last-of-type{
+        font-size: 14px; font-weight: 500; padding-right: 30%; line-height: 18px;
+        background: url('../images/shopPay.png') no-repeat right center;
+    }
+    .optionArea ul{
+        margin-top: 55px;
+    }
+    .optionArea ul li{
+        padding: 15px 12px; background-color: #6c6c6c;
+    }
+    .optionArea ul li:hover{
+        background-color: black;
+    }
+    .optionArea div a{
+        font-size: 14px; display: block;
+    }
+    .optionArea div a:first-of-type{
+        border: 1px solid #6c6c6c; 
+        background: url('../images/ico_addCart.png') no-repeat right 20px center;
+        padding: 16px 25% 16px 12px; margin: 15px 0;
+    }
+    .optionArea div a:first-of-type:hover{
+        border-color: black;
+    }
+    .optionArea div a:last-child{
+        display: block; text-align: center; font-size: 14px;
+        background-color: #1c1c1c; padding: 16px 0;
+    }
+    .optionArea div a:hover{
+        background-color: black;
+    }    
+    .infoArea{
+        font-weight: 500; clear: both;  
+    }
+    .infoArea:after{
+        content: ''; display: block; clear: both;
+    }
+    .infoArea div{
+        width: 35%;
+    }
+    .infoArea div:first-child{
+        float: left; margin-left: 8%;
+    }
+    .infoArea div:nth-child(2){
+        float: right; margin-right: 8%;
+    }
+    .infoArea div h3{
+        font-size: 15px; margin-bottom: 30px;
+    }
+    .infoArea div h4{
+        font-size: 14px; color: #3c3c3c;
+        float: left; line-height: 23px;
+    }
+    .infoArea div h4:first-of-type{
+        margin-right: 60px;
+    }
+    .infoArea div h4:last-of-type{
+        margin-right: 48px;
+    }
+    .infoArea div p, .infoArea div ul{
+        font-size: 14px; line-height: 26px; color: #3c3c3c;
+    }
+    .infoArea div p:not(:last-child),
+    .infoArea div ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .recommArea{
+        margin: 12% 5% 0 5%;
+    }
+    .recommArea ul li{
+        float: left; width: 23%;
+    }
+    .recommArea ul li:first-child{
+        width: 18.48%; background-color: #3c3c3c;
+        padding: 15% 2% 48px 1.5%;
+    }
+    .recommArea ul li:first-child p{
+        color: white; font-size: 15px;
+    }
+    .recommArea ul li:not(:first-child){
+        margin-left: 3%;
+    }
+    .recommArea ul li:nth-child(2),
+    .recommArea ul li:nth-child(4){
+        margin-top: 5%;
+    }
+    .recommArea ul li{
+        position: relative; margin-bottom: 50px;
+    }
+    .recommArea ul li:not(:first-child) div a img{
+        width: 100%; opacity: 0.85; display: block;
+    }
+    .recommArea ul li:not(:first-child){
+        background-color: black;
+    }
+    .recommArea ul li:not(:first-child) div div{
+        position: absolute; bottom: 27px; left: 50%;
+        width: 100%; transform:translateX(-50%); text-align: center;
+    }
+    .recommArea ul li:not(:first-child) div div h2{
+        margin-bottom: 20px;
+    }
+    .recommArea ul li div div p a del{
+        font-weight: 500;
+    }
+    .recommArea ul li:not(:first-child) div div p a del{
+        margin-right: 20px;
+    }
+    .signUpArea h2{
+        color: #3c3c3c; margin-bottom: 60px;
+    }
+    .signUpArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 75px;
+        font-weight: 400;
+    }
+    .signUpArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .signUpArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .signUpArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .signUpArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .signUpArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 100%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .signUpArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 100%; height: 48px; box-sizing: border-box;
+    }
+    .signUpArea form input[value="CREATE"]{
+        color: white;
+    }
+    .signUpArea a{
+        display: block; margin-top: 20px;
+        font-size: 15px; color: black; border: 1px solid black;
+        width: 400px; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .signUpCompleteArea h2, .signInArea h2, .resetPWArea h2,
+    .viewAccountEmptyArea h2, .myAccountEditArea h2,
+    .myAccountEditEmptyArea h2, .orderHistoryArea h2,
+    .contactUsArea > h2, .viewAccountArea h2,
+    .paymentArea h2, .confirmArea h2{
+        color: #3c3c3c; margin-bottom: 60px;
+    }
+    .signUpCompleteArea div{
+        width: 100%; border: 1px solid black;
+        text-align: center; padding: 90px 0; 
+        color: #3c3c3c; font-weight: 500;
+    }
+    .signUpCompleteArea div h3{
+        font-size: 25px; margin-bottom: 30px;
+    }
+    .signUpCompleteArea div{
+        font-size: 22px;
+    }
+    .signUpCompleteArea a{
+        display: block; margin-top: 60px;
+        font-size: 15px; background-color: black;
+        width: 100%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+        border: 1px solid black;
+    }
+    .signInArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .signInArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .signInArea form fieldset ul li label{
+        font-size: 16px; color: black;
+    }
+    .signInArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 100%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .signInArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 100%; height: 48px; box-sizing: border-box;
+    }
+    .signInArea form input[value="SIGN IN"]{
+        color: white;
+    }
+    .signInArea div a{
+        display: inline-block; margin-top: 20px;
+        font-size: 15px; color: black; border: 1px solid black;
+        width: 49%; text-align: center; line-height: 48px;
+        box-sizing: border-box;
+    }
+    .signInArea div a:first-of-type{
+        margin-right: 1.2%;
+    }
+    .resetPWArea h3{
+        font-size: 17px; color: #6c6c6c; margin-bottom: 50px;
+        font-weight: 400;
+    }
+    .resetPWArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .resetPWArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .resetPWArea form fieldset ul li label{
+        font-size: 16px; color: black;
+    }
+    .resetPWArea form fieldset ul li input[type="email"]{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 100%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .resetPWArea form div input{
+        border: none; font-size: 15px;
+        width: 49%; height: 48px; box-sizing: border-box;
+    }
+    .resetPWArea form div input[type="button"]{
+        background-color: black; margin-right: 1%;
+        color: white; border: 1px solid black;
+    }
+    .resetPWArea form div input[type="reset"]{
+        color: black; border: 1px solid black;
+        background-color: transparent;
+    }
+    #confirmPopup{
+        position: absolute; top: 170px; left: 5%;
+        padding: 20px 0 80px 0;
+        border: 1px solid black; width: 90%;
+        box-sizing: border-box; text-align: center;
+        background-color: white;
+    }
+    #confirmPopup input[type="button"]{
+        margin-left: 90%;
+        width: 15px; height: 15px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    #confirmPopup h2{
+        padding: 0 45px;
+        font-size: 18px; color: #3c3c3c;
+        margin: 30px 0 20px 0; line-height: 25px;
+        word-break: keep-all;
+    }
+    #confirmPopup a{
+        margin: 0 auto; width: 50%; max-width: 300px; padding: 15px 0;
+        background-color: black; font-size: 16px; font-weight: 500;
+    }
+    .myAccountEmptyArea h2{
+        color: #3c3c3c; margin-bottom: 50px;
+    }
+    .myAccountEmptyArea div h3{
+        font-size: 16px; margin-bottom: 35px;
+    }
+    .myAccountEmptyArea div:first-of-type{
+        margin-bottom: 40px;
+    }
+    .myAccountEmptyArea div:first-of-type ul li{
+        color: #3c3c3c; display: block; width: 100%;
+        border: 1px solid black;
+        text-align: center; line-height: 48px;
+        padding-left: 10px; font-size: 15px;
+        box-sizing: border-box;
+    }
+    .myAccountEmptyArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 20px;
+    }
+    .myAccountEmptyArea div:last-of-type ul li p:last-child{
+        margin-top: 20px; width: 100%; line-height: 48px;
+        background-color: #f2f2f2; border: none;
+        box-sizing: border-box; padding: 0 10px; font-size: 15px;
+        color: #6c6c6c; margin-bottom: 35px;
+    }
+    .myAccountEmptyArea a:first-of-type{
+        font-size: 15px; background-color: black;
+        width: 100%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountEmptyArea a:last-of-type{
+        margin-top: 20px; color: black; text-align: center; line-height: 48px;
+        font-size: 15px; background-color: transparent;
+        width: 100%; box-sizing: border-box; border: 1px solid black;
+    }
+    .myAccountFullArea h2{
+        color: #3c3c3c; margin-bottom: 50px;
+    }
+    .myAccountFullArea h3{
+        font-size: 16px; margin-bottom: 35px;
+    }
+    .myAccountFullArea div:first-of-type{
+        margin-bottom: 40px; border: 1px solid black; width: 100%;
+        padding: 2% 0 2% 2%; box-sizing: border-box;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li{
+        font-size: 15px; font-weight: 400;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type:after{
+        content: ''; display: block; clear: both;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:first-of-type{
+        float: left; width: 85%;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:last-child a{
+        float: right; width: 15%; padding-right: 2%; color: #3c3c3c; font-size: 15px;
+        display: block; box-sizing: border-box; text-align: right;
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li{
+        font-size: 16px; font-weight: 400;
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li:first-of-type{
+        text-transform: uppercase; line-height: 24px;
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li:first-of-type{
+        margin: 20px 0 10px 0;
+    }
+    .myAccountFullArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 20px;
+    }
+    .myAccountFullArea div:last-of-type ul li p:last-child{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 100%; line-height: 48px;
+        box-sizing: border-box; padding: 0 10px; font-size: 15px;
+        color: #6c6c6c; margin-bottom: 35px;
+    }
+    .myAccountFullArea > a:first-of-type{
+        font-size: 15px; background-color: black;
+        width: 100%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountFullArea > a:last-of-type{
+        margin-top: 20px; color: black; width: 100%;
+        font-size: 15px; background-color: transparent;
+        box-sizing: border-box; border: 1px solid black;
+        text-align: center; line-height: 48px;
+    }
+    .viewAccountArea h2{
+        float: left; width: 80%;
+    }
+    .viewAccountArea div h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .viewAccountArea > a:after{
+        content: ''; display: block; clear: both;
+    }
+    .viewAccountArea > a{
+        display: inline-block; background-color: black;
+        text-align: center; padding: 0 2%; width: 20%; 
+        font-size: 12px; line-height: 40px;
+        box-sizing: border-box; float: right;
+    }    
+    .viewAccountArea > a:after{
+        content: ''; display: block; clear: both;
+    }
+    .viewAccountArea div:last-of-type{
+        clear: both;
+    }
+    .viewAccountArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c;
+        margin-bottom: 20px;
+    }
+    .viewAccountArea div:last-of-type ul li:not(:last-of-type) p:last-child{
+        margin-top: 20px; background-color: #f2f2f2; border: none;
+        width: 100%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px; color: #6c6c6c; margin-bottom: 35px;
+    }
+    .viewAccountArea div:last-of-type ul li:last-child{
+        border: 1px solid black; width: 100%;
+        padding: 10px 10px 20px 25px;
+        box-sizing: border-box; position: relative;
+    }
+    .viewAccountArea div:last-of-type ul li:last-child p:first-child{
+        margin-top: 5px;
+    }
+    .viewAccountArea div:last-of-type ul li:last-of-type p:last-child{
+        margin-top: 20px; background-color: #f2f2f2; border: none;
+        width: 96.5%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px; color: #6c6c6c;
+    }
+    .viewAccountArea div ul li:last-child input[type="button"]{
+        position: absolute; top: 10px; right: 10px;
+        width: 13px; height: 13px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    .viewAccountArea div a{
+        margin-top: 35px; font-size: 15px; background-color: black;
+        width: 100%; box-sizing: border-box; text-align: center; line-height: 48px;
+    }
+    #deletePopup{
+        position: absolute; top: 210px; left: 5%;
+        padding: 15px 0 60px 0; width: 90%;
+        border: 1px solid black;
+        box-sizing: border-box; text-align: center;
+        background-color: white;
+    }
+    #deletePopup h2{
+        font-size: 18px; color: #3c3c3c; margin: 45px 0 30px 0; 
+    }
+    #deletePopup div{
+        padding: 0 30%; text-align: center; margin: 0 auto;
+    }
+    #deletePopup div:after{
+        content: ''; display: block; clear: both;
+    }
+    #deletePopup div a{
+        float: left; width: 43.5%; max-width: 200px; line-height: 42.5px;
+        color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500; box-sizing: border-box;
+    }
+    #deletePopup div input[type="button"]{
+        float: right; width: 43.5%; max-width: 200px; height: 45px; color: white;
+        background-color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box;
+    }
+    .viewAccountEmptyArea h2{
+        float: left; width: 80%;
+    }
+    .viewAccountEmptyArea div h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .viewAccountEmptyArea > a:after{
+        content: ''; display: block; clear: both;
+    }
+    .viewAccountEmptyArea > a{
+        display: inline-block; background-color: black;
+        text-align: center; padding: 0 2%; width: 20%; 
+        font-size: 12px; line-height: 40px;
+        box-sizing: border-box; float: right;
+    }    
+    .viewAccountEmptyArea > a:after{
+        content: ''; display: block; clear: both;
+    }
+    .viewAccountEmptyArea div:last-of-type{
+        clear: both;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 20px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:not(:last-of-type) p:last-child{
+        margin-top: 20px; background-color: #f2f2f2; border: none;
+        width: 100%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px; color: #6c6c6c; margin-bottom: 35px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-child{
+        border: 1px solid black; width: 100%;
+        padding: 10px 10px 20px 25px;
+        box-sizing: border-box; position: relative;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-child p:first-child{
+        margin-top: 5px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-of-type a{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2;
+        width: 96.5%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 16px; text-transform: uppercase;
+        color: black; text-align: center;
+    }
+    .viewAccountEmptyArea div > a{
+        margin-top: 35px; font-size: 15px; background-color: black;
+        width: 100%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountEditArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 75px;
+        font-weight: 400;
+    }
+    .myAccountEditArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .myAccountEditArea form fieldset ul li:not(:last-child),
+    .myAccountEditEmptyArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .myAccountEditArea form fieldset ul li:last-child,
+    .myAccountEditEmptyArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .myAccountEditArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .myAccountEditArea form fieldset ul li input{
+        margin-top: 20px; background-color: #f2f2f2; border: none;
+        width: 100%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px; color: #6c6c6c;
+    }
+    .myAccountEditArea form div{
+        width: 100%;
+    }
+    .myAccountEditArea form div input[type='button']{
+        border: none; background-color: black; font-size: 15px;
+        width: 49%; height: 48px; box-sizing: border-box;
+        color: white; margin-right: 1.2%;
+    }
+    .myAccountEditArea form div input[type='reset']{
+        border: 1px solid black; background-color: transparent; font-size: 15px;
+        width: 49%; height: 48px; box-sizing: border-box;
+        color: black;
+    }
+    #editPopup{
+        position: absolute; top: 220px; left: 5%;
+        padding: 20px 0 65px 0; width: 90%;
+        border: 1px solid black; background-color: white;
+        box-sizing: border-box; text-align: center;
+    }
+    #editPopup input[type="button"]{
+        margin-left: 95%;
+        width: 15px; height: 15px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    #editPopup h2{
+        padding: 0 45px;
+        font-size: 18px; color: #3c3c3c;
+        margin: 30px 0 20px 0; line-height: 25px;
+        word-break: keep-all;
+    }
+    #editPopup a{
+        margin: 0 auto; width: 35%; max-width: 280px; padding: 15px 0;
+        background-color: black; font-size: 16px; font-weight: 500;
+    }
+    .myAccountEditEmptyArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 75px;
+    }
+    .myAccountEditEmptyArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .myAccountEditEmptyArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .myAccountEditEmptyArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 100%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+        color: #6c6c6c;
+    }
+    .myAccountEditEmptyArea form div{
+        width: 100%;
+    }
+    .myAccountEditEmptyArea form div input[type='button']{
+        border: none; background-color: black; font-size: 15px;
+        width: 49%; height: 48px; box-sizing: border-box;
+        color: white; margin-right: 1.3%;
+    }
+    .myAccountEditEmptyArea form div input[type='reset']{
+        border: 1px solid black; background-color: transparent; font-size: 15px;
+        width: 49%; height: 48px; box-sizing: border-box;
+        color: black;
+    }
+    .orderHistoryArea > div{
+        width: 100%; padding: 30px; font-weight: 400;
+        border: 1px solid black; text-transform: uppercase;
+        box-sizing: border-box;
+    }
+    .orderHistoryArea div ul:first-child{
+        margin-bottom: 25px;
+    }
+    .orderHistoryArea div ul:first-child li:first-child{
+        font-size: 18px;
+    }
+    .orderHistoryArea div ul:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div ul:first-child li:first-child{
+        font-size: 16px; float: right;
+    }
+    .orderHistoryArea div img{
+        display: block; width: 18%; float: right;
+    }
+    .orderHistoryArea div img:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div div{
+        float: left; width: 78%; margin-right: 4%;
+    }
+    .orderHistoryArea div div h3{
+        margin-bottom: 8%; font-size: 16px; line-height: 22px;
+    }
+    .orderHistoryArea div div ul:not(:last-child){
+        color: #6c6c6c;
+    }
+    .orderHistoryArea div div:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div div ul:first-of-type{
+        height: 30px;
+    }
+    .orderHistoryArea div div ul:first-of-type li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:first-of-type li:last-child{
+        float: right; width: 50%; font-size: 16px; text-align: right;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2){
+        height: 15px;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2) li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2) li:last-child{
+        float: right; width: 50%; text-align: right; font-size: 16px;
+    }
+    .orderHistoryArea div div hr{
+        width: 100%;
+    }
+    .orderHistoryArea div div ul:last-of-type{
+        margin-bottom: 50px;
+    }
+    .orderHistoryArea div div ul:last-of-type li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:last-of-type li:last-child{
+        float: right; width: 50%; font-size: 16px; font-weight: 500;
+        text-align: right;
+    }
+    .orderHistoryArea div ul:last-child{
+        clear: both; font-size: 14px; color: #6c6c6c;
+    }
+    .orderHistoryArea div ul:last-child li p:first-child{
+        margin-bottom: 20px;
+    }
+    .orderHistoryArea div ul:last-child li:first-child p:last-child{
+        margin-bottom: 35px;
+    }
+    .orderHistoryArea div ul:last-child li p:last-child{
+        display: block; border: none;
+        background-color: #f2f2f2;
+        line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c; 
+    }
+    .orderHistoryArea a{
+        display: block; margin-top: 60px;
+        font-size: 15px; background-color: black;
+        width: 100%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .aboutArea{
+        margin: 30px 0 0 5%
+    }
+    .aboutArea h2{
+        margin-bottom: 50px; color: #3c3c3c;
+    }
+    .aboutArea > p{
+        font-size: 16px; font-weight: 400; margin-bottom: 40px;
+    }
+    .aboutArea div{
+        float: left; width: 95%; min-width: 400px;
+    }
+    .aboutArea div:after{
+        content: ''; display: block; clear: both;
+    }
+    .aboutArea div img{
+        width: 100%; display: block; margin-bottom: 35px;
+    }
+    .aboutArea div p, .aboutArea ul li{
+        font-size: 16px; font-weight: 400; line-height: 30px; color: #6c6c6c;
+    }
+    .aboutArea ul{
+        width: 95%; min-width: 400px; margin-top: 20px;
+    }
+    .aboutArea ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .aboutArea ul li:last-child{
+        margin-bottom: 100px;
+    }
+    .contactUsArea > p{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 75px;
+        font-weight: 400; line-height: 36px; width: 100%;
+    }
+    .contactUsArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .contactUsArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .contactUsArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .contactUsArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .contactUsArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 100%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .contactUsArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 100%; height: 48px; box-sizing: border-box;
+    }
+    .contactUsArea form input[value="SEND"]{
+        color: white;
+    }
+    #sendPopup{
+        position: absolute; top: 220px; left: 5%;
+        padding: 15px 0 70px 0; text-align: center;
+        border: 1px solid black; width: 90%;
+        background-color: white; box-sizing: border-box;
+    }
+    #sendPopup input[type="button"]{
+        margin-left: 90%; width: 15px; height: 15px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    #sendPopup h2{
+        margin-top: 50px; font-size: 25px; font-weight: 500;
+        text-transform: uppercase; color: #3c3c3c; margin-bottom: 30px;
+    }
+    #sendPopup p{
+        font-size: 22px; font-weight: 500; color: #3c3c3c;
+    }
+    .cartEmptyArea h2{
+        margin-bottom: 65px; color: #3c3c3c; text-transform: uppercase;
+    }
+    .cartEmptyArea{
+        content: ''; display: block; clear: both;
+    }
+    .cartEmptyArea img{
+        float: right; width: 45%; margin-right: 5%;
+    }
+    .cartEmptyArea div{
+        float: left; width: 45%; margin-right: 5%;
+    }
+    .cartEmptyArea div p{
+        width: 100%; font-size: 15px; line-height: 48px;
+        text-align: center; margin-bottom: 50px;
+        border: 1px solid black; box-sizing: border-box;
+    }
+    .cartEmptyArea div a{
+        width: 100%; line-height: 48px; display: block;
+        background-color: black; box-sizing: border-box; text-align: center;
+    }
+    .cartArea > div:first-child{
+        width: 45%; margin-bottom: 65px;
+    }
+    .cartArea > div:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea > div:first-child h2{
+        color: #3c3c3c; float: left; width: 50%;
+    }
+    .cartArea > div:first-child > input[value="Remove all"]:first-of-type{
+        float: right; width: 105px; line-height: 40px;
+        background-color: black; color: white; border: none;
+        font-size: 12px; font-weight: 400;
+    }
+    .cartArea > img{
+        float: right; width: 45%; margin-right: 5%;
+    }
+    .cartArea section{
+        float: left; width: 45%; margin-right: 5%;
+    }
+    .cartArea section > div:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child{
+        padding: 20px; border: 1px solid black; margin-bottom: 30px;
+    }
+    .cartArea section > div:first-child h3{
+        float: left;
+        font-size: 16px; font-weight: 400; text-transform: uppercase;
+        line-height: 24px; float: left; width: 95%; margin-bottom: 25px;
+    }
+    .cartArea section > div:first-child .openPop{
+        float: right; width: 13px; height: 13px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+        margin-top: 5px;
+    }
+    .cartArea section > div:first-child > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child > div img{
+        float: right; width: 18%; display: block;
+    }
+    .cartArea section > div:first-child > div > p{
+        float: left; width: 10%;
+        font-size: 20px; font-weight: 400;
+    }
+    .cartArea section > div:first-child > div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child > div > div{
+        float: right; width: 40%; text-align: right;
+        margin-right: 5%;
+    }
+    .cartArea section > div:first-child > div > div input[value="-"]{
+        background: url('../images/btn_minus.png') no-repeat center;
+        border: none;
+    }
+    .cartArea section > div:first-child > div > div input[type='number']{
+        margin: 0 10%; border: none; text-align: center;
+        font-size: 20px;
+    }
+    .cartArea section > div:first-child > div > div input[type='number']::-webkit-outer-spin-button,
+    .cartArea section > div:first-child > div > div input[type='number']::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .cartArea section > div:first-child > div > div input[value="+"]{
+        background: url('../images/btn_plus.png') no-repeat center; border: none;
+    }
+    .cartArea section > div:nth-child(2){
+        margin-bottom: 60px;
+    }
+    .cartArea section > div:nth-child(2):after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:nth-child(2) p:first-child{
+        float: left; font-size: 14px; font-weight: 400;
+        color: #7d7d7d; line-height: 22px;
+    }
+    .cartArea section > div:nth-child(2) strong{
+        float: right; font-size: 22px; font-weight: 600;
+    }
+    .cartArea section > p{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+    }
+    .cartArea section > input[type="text"]{
+        margin-top: 20px; width: 100%; padding: 5px 5px 80px 5px;
+        box-sizing: border-box; border: none; margin-bottom: 35px;
+        background-color: #f2f2f2; font-size: 16px;
+    }
+    .cartArea section > a{
+        width: 100%; line-height: 48px; color: black;
+        border: 1px solid black; display: block;
+        box-sizing: border-box; text-align: center; margin-bottom: 20px;
+    }
+    .cartArea section > div:last-of-type:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:last-of-type{
+        margin-bottom: 100px;
+    }
+    .cartArea section > div:last-of-type > p{
+        float: left; width: 90.6%; color: #7d7d7d;
+        font-size: 14px; font-weight: 400; text-transform: uppercase;
+    }
+    .cartArea section > div:last-of-type > img{
+        float: right; width: 9.4%; display: block;
+    }
+    #cartPopup{
+        position: absolute; top: 230px; left: 52.3%;
+        padding: 15px 5% 70px 5%; border: 1px solid black; width: 43%;
+        box-sizing: border-box; text-align: center; background-color: white;
+    }
+    #cartPopup h2{
+        font-size: 18px; color: #3c3c3c;
+        margin: 45px 0 30px 0; line-height: 26px;
+    }
+    #cartPopup div{
+        padding: 0 10%; text-align: center; margin: 0 auto;
+    }
+    #cartPopup div:after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPopup div a{
+        float: left; width: 45%; line-height: 42.5px;
+        color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500; box-sizing: border-box;
+    }
+    #cartPopup div input[type="button"]{
+        float: right; width: 45%; height: 45px; color: white;
+        background-color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box; 
+    }
+    .paymentArea, .payment2Area{
+        padding: 30px 0 0 5%;
+    }
+    .paymentArea > h3{
+        font-size: 18px; font-weight: 400; margin-bottom: 80px; color: #7d7d7d;
+    }
+    .PaymentDetails{
+        float: right; width: 40%; margin-right: 5%;
+    }
+    .PaymentDetails > div{
+        padding: 20px; border: 1px solid black; margin-bottom: 30px;
+    }
+    .PaymentDetails > div h3{
+        font-size: 16px; font-weight: 400; margin-bottom: 20px; line-height: 25px;
+    }
+    .PaymentDetails > div div:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > div div img{ 
+        width: 100%; display: block; margin-bottom: 20px;
+    }
+    .PaymentDetails > div div div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > div div div ul li:first-child{
+        float: left; 
+    }
+    .PaymentDetails > div div div ul li:last-child{
+        float: right;
+    }
+    .PaymentDetails > div div div ul:first-child{
+        margin-bottom: 30px;
+    }
+    .PaymentDetails > div div div ul:first-child li{
+        font-size: 20px; font-weight: 400;
+    }
+    .PaymentDetails > div div div ul:first-child li:last-child{
+        text-transform: none;
+    }
+    .PaymentDetails > div div div ul:last-child li:first-child{
+        font-size: 14px; font-weight: 400; color: #7d7d7d; padding-top: 8px;
+    }
+    .PaymentDetails > div div div ul:last-child li:last-child{
+        font-size: 22px; font-weight: 500; 
+    }
+    .PaymentDetails > ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > ul{
+        margin-bottom: 50px;
+    }
+    .PaymentDetails > ul li:first-child{
+        float: left;
+    }
+    .PaymentDetails > ul li:last-child{
+        float: right;
+    }
+    .PaymentDetails > ul:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .PaymentDetails > ul:not(:last-child) li:first-child{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+    }
+    .PaymentDetails > ul:not(:last-child) li:last-child{
+        font-size: 22px; font-weight: 500; 
+    }
+    .PaymentDetails > ul:last-child li:first-child{
+        font-size: 14px; font-weight: 400;
+    }
+    .PaymentDetails > ul:last-child li:last-child{
+        font-size: 22px; font-weight: 600;
+    }
+    .paymentArea section:last-child{
+        float: left; width: 45%; margin-right: 10%;
+    }
+    .paymentArea section:last-child p{
+        font-size: 16px; font-weight: 400; margin-bottom: 50px;
+    }
+    .paymentArea section:last-child form fieldset label{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+    }
+    .paymentArea section:last-child form fieldset > input[type="email"],
+    .paymentArea section:last-child form fieldset ul li input{
+        display: block; background-color: #f2f2f2; border: none;
+        height: 48px; margin-top: 20px; padding-left: 10px;
+    }
+    .paymentArea section:last-child form fieldset > input[type="email"]{
+        margin-bottom: 10px; width: 100%; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p{
+        text-align: right;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p input[type="checkbox"]{
+        appearance: none; width: 15px; height: 15px;
+        background: url('../images/ico_check.png') center center;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p input[type="checkbox"]:checked{
+        background: url('../images/ico_checked.png') center center;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:first-child select{
+        display: block; border: none; width: 100%; height: 48px;
+        background-color: #f2f2f2; padding-left: 10px;
+        color: #7d7d7d; font-size: 14px; margin: 20px 0 35px 0; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:not(:nth-child(3)):not(:nth-child(4)) input{
+        width: 100%; margin-bottom: 35px; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(3){
+        float: left; width: 44%; margin-right: 2%;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(3) input,
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(4) input{
+        width: 100%; margin-bottom: 35px; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(4){
+        float: right; width: 44%;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(5):before{
+        content: ''; display: block; clear: both;
+    }
+    .paymentArea section:last-child form > input{
+        width: 100%; height: 48px; border: none;
+        color: white; background-color: black;
+        font-size: 15px; font-weight: 400; text-transform: uppercase;
+        box-sizing: border-box; display: block;
+        margin-bottom: 50px;
+    }
+    .payment2Area h2{
+        margin-bottom: 50px; color: #3c3c3c;
+    }
+    .payment2Area > h3{
+        font-size: 18px; font-weight: 400; margin-bottom: 50px; color: #7d7d7d;
+    }
+    .payment2Area section:last-of-type{
+        float: left; width: 45%; margin-right: 10%;
+    }
+    .payment2Area section:last-of-type h3{
+        font-size: 16px; font-weight: 400; margin-bottom: 50px;
+    }
+    .payment2Area section:last-of-type fieldset p{
+        font-size: 14px; font-weight: 400; color: #7d7d7d; margin-bottom: 20px;
+    }
+    .payment2Area section:last-of-type fieldset:first-child{
+        margin-bottom: 40px;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div{
+        display: flex; flex-flow: wrap; justify-content: space-between
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="text"]{
+        width: 100%; height: 48px; margin-bottom: 15px; padding-left: 10px;
+        background-color: #f2f2f2; border: none; box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]{
+        width: 30%; height: 48px; border: 1px solid black;
+        background: no-repeat center center; cursor: pointer; appearance: none;
+        box-sizing: border-box; background-size: 80%;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(2){
+        background-image: url('../images/ico_paypal.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(3){
+        background-image: url('../images/ico_master.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(4){
+        background-image: url('../images/ico_visa.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child input[type="radio"]:checked{
+        border: 3px solid #4cc7a3;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li label{
+        margin-bottom: 20px; display: block;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li select{
+        display: block; width: 100%; height: 48px;
+        background-color: #f2f2f2; border: none;
+        padding: 0 10px; color: #7d7d7d; box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul:last-of-type li:last-child input{
+        width: 100%; height: 48px; background-color: #f2f2f2;
+        border: none; box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .payment2Area section:last-of-type fieldset:last-of-type > input[type="submit"]{
+        display: block; background-color: black; color: white; 
+        width: 100%; height: 48px; border: none; 
+        font-size: 15px; font-weight: 400;
+        text-align: center; text-transform: uppercase; margin-bottom: 60px;
+    }
+    .payment2Area section:last-of-type > ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .payment2Area section:last-of-type > ul{
+        margin-bottom: 100px;
+    }
+    .payment2Area section:last-of-type > ul li{
+        float: left;
+    }
+    .payment2Area section:last-of-type > ul li:not(:last-child){
+        margin-right: 20px;
+    }
+    .payment2Area section:last-of-type > ul li a{
+        color: #7d7d7d; font-size: 10px; text-decoration: underline;
+    }
+    .confirmArea > p, 
+    .confirmArea div h3{
+        font-size: 16px; font-weight: 400; text-transform: uppercase;
+    }
+    .confirmArea > div h3{
+        margin-bottom: 25px;
+    }
+    .confirmArea > div:first-of-type{
+        margin-top: 50px; padding: 20px; width: 95%;
+        border: 1px solid black; box-sizing: border-box;
+        margin-bottom: 35px;
+    }
+    .confirmArea > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type img{
+        float: right; width: 18%; display: block;
+    }
+    .confirmArea > div:first-of-type > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type > div > div{
+        float: left; width: 78%; padding-right: 4%;
+    }
+    .confirmArea > div:first-of-type > div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type > div > div:first-of-type p:first-child{
+        float: left; font-size: 20px; font-weight: 400;
+    }
+    .confirmArea > div:first-of-type > div > div:first-of-type p:last-child{
+        float: right; box-sizing: border-box; font-weight: 400;
+        text-align: right;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type{
+        margin-top: 19.5%;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type p:first-child{
+        float: left; width: 10%; font-size: 14px; color: #7d7d7d;
+        margin-right: 57%;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type p:last-child{
+        float: right; width: 23%; text-align: right;
+    }
+    .confirmArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea ul{
+        width: 95%;
+    }
+    .confirmArea ul li:first-child{
+        font-size: 14px; text-transform: uppercase; font-weight: 400;
+        float: left; width: 30%; line-height: 22px;
+    }
+    .confirmArea ul li:last-child{
+        font-size: 22px; font-weight: 500;
+        float: right;
+    }
+    .confirmArea ul:not(:first-of-type) li{
+        margin-top: 25px;
+    }
+    .confirmArea ul:not(:last-child) li:first-child{
+        color: #7d7d7d;
+    }
+    .confirmArea div:last-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:last-child a{
+        font-size: 15px; font-weight: 400; text-transform: uppercase; 
+        display: block; text-align: center; width: 47%;
+        line-height: 48px; box-sizing: border-box;
+        margin-top: 50px;
+    }
+    .confirmArea div:last-child a:first-child{
+        background-color: black; float: left;
+        border: 1px solid black; box-sizing: border-box;
+    }
+    .confirmArea div:last-child a:last-child{
+        float: left; margin-left: 1%;
+        border: 1px solid black; color: black;
+        box-sizing: border-box;
+    }
+    .shippingReturnArea h2{
+        color: #3c3c3c; margin-bottom: 30px;
+    }
+    .shippingReturnArea h3{
+        font-size: 16px; color: black; font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .shippingReturnArea p{
+        font-size: 18px; font-weight: 400;
+        color: #6c6c6c; margin-bottom: 30px;
+    }
+    .shippingReturnArea ul{
+        font-size: 14px; color: #6c6c6c; font-weight: 400;
+        width: 100%; 
+    }
+    .shippingReturnArea ul li{
+        line-height: 24px;
+    }
+    .shippingReturnArea ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .shippingReturnArea ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .termsServiceArea h2{
+        color: #3c3c3c; margin-bottom: 30px;
+    }
+    .termsServiceArea h3{
+        font-size: 16px; color: black; font-weight: 400; margin-bottom: 30px;
+    }
+    .termsServiceArea p{
+        font-size: 18px; font-weight: 400;
+        color: #6c6c6c; margin-bottom: 30px; width: 100%;
+    }
+    .termsServiceArea ul{
+        font-size: 14px; color: #6c6c6c; font-weight: 400; width: 100%; 
+    }
+    .termsServiceArea ul li{
+        line-height: 24px;
+    }
+    .termsServiceArea ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .termsServiceArea ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .PrivacyArea h2{
+        margin-bottom: 30px; color: #3c3c3c;
+    }
+    .PrivacyArea article h3{
+        font-size: 16px; font-weight: 400; color: black; margin-bottom: 30px;
+    }
+    .PrivacyArea article p{
+        color: #7d7d7d; font-weight: 400;
+    }
+    .PrivacyArea article:first-child p{
+        font-size: 18px; line-height: 36px;
+    }
+    .PrivacyArea article:not(:first-child) h3{
+        margin-top: 30px;
+    }
+    .PrivacyArea article:not(:first-child) p{
+        font-size: 14px; line-height: 24px; margin-bottom: 20px;
+    }
+    .PrivacyArea article:nth-child(2) p:nth-of-type(2){
+        font-size: 18px;
+    }
+    .PrivacyArea article ul li{
+        font-size: 14px; line-height: 24px; color: #7d7d7d;
+    }
+    .PrivacyArea article ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .PrivacyArea article h4{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+        margin: 30px 0 20px 0;
+    }
+    .refundArea section:first-child h2{
+        margin-bottom: 30px; color: #3c3c3c;
+    }
+    .refundArea section:first-child h3{
+        font-size: 16px; text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .refundArea section p, .refundArea section ul{
+        color: #7d7d7d;
+    }
+    .refundArea section:first-child p{
+        font-size: 18px; line-height: 36px;
+    }
+    .refundArea section:first-child p:first-child{
+        margin-bottom: 25px;
+    }
+    .refundArea section:not(:first-child) h3{
+        font-size: 22px; color: #7d7d7d; font-weight: 400;
+        margin: 40px 0 25px 0;
+    }
+    .refundArea section:not(:first-child) p, 
+    .refundArea section ul li{
+        line-height: 24px;
+    }
+    .refundArea section:nth-child(2) p:first-of-type{
+        margin-bottom: 20px;
+    }
+    .refundArea section ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+/* tablet */
+
+@media screen and (min-width: 1280px){
+    #loginPopup{
+        padding: 75px 3.1%; width: 35%; height: 35%; background-color: white;
+        box-sizing: border-box; text-align: center;
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+        position: fixed; left: 32.5%; top: 32.5%; min-width: 440px; min-height: 340px;
+        z-index: 1000; display: none;
+    }
+    #loginPopup.active,
+    .contentsArea > div:first-child div h2 a,
+    .contentsArea > div:last-child div h2 a,
+    .productListArea img, .signUpCompleteArea a,
+    .signInArea div, .myAccountEmptyArea div:last-of-type ul li p:last-child,
+    .myAccountEmptyArea a:first-of-type, .myAccountEmptyArea a:last-of-type,
+    .myAccountFullArea div:last-of-type ul li p:last-child,
+    .myAccountFullArea > a:last-of-type{
+        display: block;
+    }
+    #loginPopup h2{
+        font-size: 30px; font-weight: 400; color: #1c1c1c; margin-bottom: 35px;
+        text-transform: uppercase;
+    }
+    #loginPopup h2 input.closeBtn{
+        width: 15px; float: right; line-height: 27px; height: 15px;
+        background: url('../images/ico_close_black.png') center center no-repeat;
+        border: none; text-indent: -9999px;
+    }
+    #loginPopup p{
+        color: #444444; margin-bottom: 50px;
+        line-height: normal; width: 80%; margin: 0 auto;
+        line-height: 30px;
+    }
+    #loginPopup a.boxBtn{
+        line-height: 50px; width: 25%; margin: 25px auto; font-size: 15px;
+        background-color: black; display: block;
+    }
+    #loginPopup p, .contentsArea > div:first-child div p a,
+    .contentsArea > div:last-child div p a, .signUpArea h3,
+    .resetPWArea h3, .contactUsArea > p, .payment2Area > h3{
+        font-size: 18px; font-weight: 400;
+    }
+    .contentsArea > div:first-child div h2 a, .contentsArea > div:last-child div h2 a{
+        font-size: 35px; font-weight: 500;
+    }
+    .introArea div p:first-child, .productListArea > div > p,
+    .productListArea > div div > p, .productListArea > div div ul li a{
+        font-size: 12px; font-family: 400;
+    }
+    .introArea div h2, .signUpArea h2, .signUpCompleteArea h2,
+    .signInArea h2, .resetPWArea h2, .myAccountEmptyArea h2,
+    .myAccountFullArea h2, .viewAccountArea h2,
+    .viewAccountEmptyArea h2, .myAccountEditArea h2,
+    .myAccountEditEmptyArea h2, .orderHistoryArea h2,
+    .aboutArea h2, .contactUsArea > h2, .cartEmptyArea h2,
+    .cartArea > div:first-child h2, .paymentArea h2, .payment2Area h2,
+    .shippingReturnArea h2, .termsServiceArea h2, .PrivacyArea h2,
+    .refundArea section:first-child h2{
+        font-size: 24px; font-family: 500;
+    }
+    .signUpArea, .signUpCompleteArea, .signInArea, .resetPWArea,
+    .myAccountEmptyArea, .myAccountFullArea, .viewAccountArea,
+    .viewAccountEmptyArea, .myAccountEditArea, .myAccountEditEmptyArea,
+    .orderHistoryArea, .aboutArea, .contactUsArea, .cartEmptyArea,
+    .confirmArea, .cartArea, .paymentArea, .payment2Area,
+    .shippingReturnArea, .termsServiceAre, .PrivacyArea,
+    .refundArea{
+        padding: 80px 0 0 118px;
+    }
+    .signUpArea h2, .signUpCompleteArea h2, .signInArea h2,
+    .resetPWArea h2, .myAccountEmptyArea h2, .myAccountFullArea h2,
+    .viewAccountArea h2, .viewAccountEmptyArea h2, .myAccountEditArea h2,
+    .myAccountEditEmptyArea h2, .orderHistoryArea h2, .contactUsArea > h2,
+    .paymentArea h2, .payment2Area h2{
+        color: #3c3c3c; margin-bottom: 60px;
+    }
+    .contentsArea > div img,
+    .slideArea ol li a img,
+    .aboutArea div img{
+        width: 100%; display: block;
+    }
+    .contentsArea{
+        max-width: 1540px; margin: 0 auto;
+        padding: 50px 5% 0 4%;
+    }
+    .contentsArea > div div,
+    .contentsArea > div div p a{
+        transition: 0.7s;
+    }    
+    .contentsArea > div:first-child{
+        position: relative; float: left; width: 50%;
+        background-color: black;
+    }
+    .contentsArea > div:first-child:hover img{
+        opacity: 0.4; transition: 0.7s;
+    }
+    .contentsArea > div:first-child div{
+        position: absolute; top: 0; left: 0;
+        width: 82%; margin: 35% 0 0 9%;
+        padding: 10.84% 0 4.87% 0;
+        text-align: center;
+        border: 1px solid white; 
+    }
+    .contentsArea > div:first-child div h2{
+        margin-bottom: 4.05%; 
+    }
+    .contentsArea > div:first-child div p a,
+    .contentsArea > div:last-child div p a{
+        opacity: 0; color: white; text-transform: none; padding-right: 20px;
+    }
+    .contentsArea > div:first-child div p a,
+    .contentsArea > div:last-child div p a{
+        background: url('../images/ico_arrow.png') right no-repeat;
+    }
+    .contentsArea > div:last-child{
+        margin-top: 76px; background-color: black;
+        width: 50%; float: left; position: relative;
+    }
+    .contentsArea > div:last-child:hover img{
+        opacity: 0.4; transition: 0.7s;
+    }
+    .contentsArea > div:last-child > div{
+        position: absolute; top: 0; left: 0;
+        width: 82%; margin: 35% 0 0 9%;
+        padding: 10.84% 0 4.87% 0;
+        text-align: center;
+        border: 1px solid white; 
+    }
+    .contentsArea > div:last-child div h2{
+        margin-bottom: 4.05%;
+    }
+    .contentsArea > div:hover div p a{
+        opacity: 1;
+    }
+    .introArea{
+        max-width: 1540px; margin: 0 auto; 
+        padding: 0 5% 55px 5%;
+    }
+    .introArea:after{
+        content: ''; display: block; clear: both;
+    }
+    .introArea div{
+        float: left; width: 20%; margin-top: 30%;
+    }
+    .introArea div p:first-child{
+        margin-bottom: 20px;
+    }
+    .introArea div h2{
+        margin-bottom: 47px;
+    }
+    .introArea div p:last-child{
+        font-size: 15px; font-family: 300;
+    }
+    .introArea img{
+        margin: 125px 0 0 29.9%; width: 50%;
+    }
+    .productListArea{
+        margin: 0 auto; padding: 0 5% 0 5%;
+    }
+    .productListArea > div{
+        padding: 60px 1% 0 1%; margin-bottom: 30px;
+        background-color: #3c3c3c; 
+        height: 250px; width: 21.5%;
+    }
+    .productListArea > div > p{
+        text-transform: uppercase;
+        color: #6c6c6c; margin-bottom: 48px;
+    }
+    .productListArea > div > div{
+        position: relative;
+    }
+    .productListArea > div div > p{
+        padding: 18px 0 18px 20px;
+        background: url('../images/triangle_bottom.png') no-repeat right 20px center;
+        background-color: #6c6c6c;
+    }
+    .productListArea > div div ul{
+        position: absolute; left: 0;
+        z-index: 1; width: 100%;
+    }
+    .productListArea > div div ul li a{
+        padding: 18px 0 18px 20px;
+        display: block; background-color: #6c6c6c; padding-left: 20px;      
+    }
+    .productListArea > div div ul li:first-child a{
+        background: url('../images/triangle_top.png') no-repeat right 20px center;
+        background-color: #6c6c6c;
+    }
+    .productListArea > div div ul li a:hover{
+        background-color: black; 
+    }
+    .productListArea > ul{
+        float: left; width: 23.5%; margin-bottom: 50px;
+    }
+    .productListArea > ul li div div h2 a{
+        font-size: 17px; font-weight: 600; line-height: 24px;
+    }
+    .productListArea > ul li div div p a{
+        font-size: 20px; font-weight: 700;
+    }
+    .productListArea > ul:nth-child(2),
+    .productListArea > ul:nth-child(3),
+    .productListArea > ul:nth-child(4){
+        margin-right: 2%;
+    }    
+    .productListArea > ul:nth-child(3),
+    .productListArea > ul:last-child{
+        margin-top: -255px;
+    }
+    .productListArea > ul:nth-child(4){
+        margin-top: -340px;
+    }
+    .productListArea > ul:not(:first-child) li{
+        position: relative;
+    }
+    .productListArea > ul:not(:first-child) li:not(:last-child){
+        margin-bottom: 7%;
+    }
+    .productListArea > ul:not(:first-child) li div a img{
+        width: 100%; opacity: 1; transition: 0.5s;
+    }
+    .productListArea > ul:not(:first-child) li:hover{
+        background-color: black;
+    }
+    .productListArea > ul:not(:first-child) li:hover div a img{
+        opacity: 0.4;
+    }
+    .productListArea > ul:not(:first-child) li div div{
+        position: absolute; bottom: 27px; left: 50%;
+        width: 100%; transform:translateX(-50%); text-align: center;
+        opacity: 0;
+    }
+    .productListArea > ul:not(:first-child) li div:hover div{
+        opacity: 1;
+    }
+    .productListArea > ul:not(:first-child) li div div h2{
+        margin-bottom: 20px;
+    }
+    .productListArea > ul li div div p a del{
+        font-weight: 500;
+    }
+    .productListArea > ul:not(:first-child) li div div p a del{
+        margin-right: 20px;
+    }
+    .selBox_group, .hideBox{
+        display: none;
+    }
+    .slideArea{
+        float: left; width: 45%; max-width: 742px;
+        padding-left: 5%; padding-top : 50px;
+        position: relative;
+    }
+    .bx-wrapper{
+        box-shadow: none; border: none; background: none;
+    }
+    .slideArea ol{
+        position: absolute; width: 90%; bottom: 100px;
+        text-align: center;
+    }
+    .slideArea ol li{
+        display: inline-block; margin: 0 -3px;
+    }
+    .optionArea{
+        float: right; width: 42%;
+        margin: 120px 5% 0 3%; color: white;
+    }
+    .optionArea div{
+        padding: 25% 98px 27% 85px; background-color: #3c3c3c;
+    }
+    .optionArea div p:first-child{
+        font-size: 12px; color: #6c6c6c; margin-bottom: 25px;
+        font-weight: 500;
+    }
+    .optionArea div h2{
+        font-size: 22px; font-weight: 500; line-height: 32px;
+        margin-bottom: 23px;
+    }
+    .optionArea div h3{
+        font-size: 22px; font-weight: 500; margin-bottom: 45px;
+    }
+    .optionArea div h3 del{
+        margin-right: 30px;
+    }
+    .optionArea div p:last-of-type{
+        font-size: 14px; font-weight: 500; padding-right: 50px; line-height: 18px;
+        background: url('../images/shopPay.png') no-repeat right center;
+    }
+    .optionArea ul{
+        margin-top: 55px;
+    }
+    .optionArea ul li{
+        padding: 15px 12px; background-color: #6c6c6c;
+    }
+    .optionArea ul li:hover{
+        background-color: black;
+    }
+    .optionArea div a{
+        font-size: 14px; display: block;
+    }
+    .optionArea div a:first-of-type{
+        border: 1px solid #6c6c6c; 
+        background: url('../images/ico_addCart.png') no-repeat right 20px center;
+        padding: 16px 25% 16px 12px; margin: 15px 0;
+    }
+    .optionArea div a:first-of-type:hover{
+        border-color: black;
+    }
+    .optionArea div a:last-child{
+        display: block; text-align: center; font-size: 14px;
+        background-color: #1c1c1c; padding: 16px 0;
+    }
+    .optionArea div a:hover{
+        background-color: black;
+    }  
+    .infoArea{
+        font-weight: 500; clear: both;  
+    }
+    .infoArea:after{
+        content: ''; display: block; clear: both;
+    }
+    .infoArea div{
+        width: 35%;
+    }
+    .infoArea div:first-child{
+        float: left; margin-left: 8%;
+    }
+    .infoArea div:nth-child(2){
+        float: right; margin-right: 8%;
+    }
+    .infoArea div h3{
+        font-size: 15px; margin-bottom: 30px;
+    }
+    .infoArea div h4{
+        font-size: 14px; color: #3c3c3c;
+        float: left; line-height: 23px;
+    }
+    .infoArea div h4:first-of-type{
+        margin-right: 60px;
+    }
+    .infoArea div h4:last-of-type{
+        margin-right: 48px;
+    }
+    .infoArea div p, .infoArea div ul{
+        font-size: 14px; line-height: 26px; color: #3c3c3c;
+    }
+    .infoArea div p:not(:last-child),
+    .infoArea div ul li:last-child{
+        margin-bottom: 30px;
+    }
+    .recommArea{
+        margin: 12% 5% 0 5%;
+    }
+    .recommArea ul li{
+        float: left; width: 23%;
+    }
+    .recommArea ul li:first-child{
+        width: 18.48%; background-color: #3c3c3c;
+        padding: 15% 2% 48px 1.5%;
+    }
+    .recommArea ul li:first-child p{
+        color: white; font-size: 15px;
+    }
+    .recommArea ul li:not(:first-child){
+        margin-left: 3%;
+    }
+    .recommArea ul li:nth-child(2),
+    .recommArea ul li:nth-child(4){
+        margin-top: 5%;
+    }
+    .recommArea ul li{
+        position: relative; margin-bottom: 50px;
+    }
+    .recommArea ul li:not(:first-child) div a img{
+        width: 100%; opacity: 1; transition: 0.5s;
+        display: block;
+    }
+    .recommArea ul li:not(:first-child):hover{
+        background-color: black;
+    }
+    .recommArea ul li:not(:first-child):hover div a img{
+        opacity: 0.4;
+    }
+    .recommArea ul li:not(:first-child) div div{
+        position: absolute; bottom: 27px; left: 50%;
+        width: 100%; transform:translateX(-50%); text-align: center;
+        opacity: 0;
+    }
+    .recommArea ul li:not(:first-child) div:hover div{
+        opacity: 1;
+    }
+    .recommArea ul li:not(:first-child) div div h2{
+        margin-bottom: 20px;
+    }
+    .recommArea ul li div div p a del{
+        font-weight: 500;
+    }
+    .recommArea ul li:not(:first-child) div div p a del{
+        margin-right: 20px;
+    }
+    .signUpArea h3, .signUpArea form fieldset legend,
+    .signUpArea form fieldset ul li label, .signUpArea > input, .signUpArea a,
+    .signInArea form fieldset ul li label, .signInArea > input, .signInArea a,
+    .resetPWArea h3, .resetPWArea > input, .signUpArea a,
+    .myAccountEmptyArea div, .myAccountFullArea div, .viewAccountArea div,
+    .myAccountEditArea h3, .myAccountEditArea form fieldset legend,
+    .myAccountEditArea form fieldset ul li label, .myAccountEditArea > input, .myAccountEditArea a,
+    .contactUsArea > p, .contactUsArea form fieldset legend,
+    .contactUsArea form fieldset ul li label, .contactUsArea > input, .contactUsArea a{
+        font-weight: 400;
+    }
+    .signUpArea h3{
+        color: #6c6c6c; margin-bottom: 75px;
+    }
+    .signUpArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .signUpArea form fieldset ul li:not(:last-child),
+    .signInArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .signUpArea form fieldset ul li:last-child,
+    .signInArea form fieldset ul li:last-child,
+    .myAccountEmptyArea div:first-of-type{
+        margin-bottom: 60px;
+    }
+    .signUpArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .signUpArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .signUpArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 45%; height: 48px; box-sizing: border-box;
+    }
+    .signUpArea form input[value="CREATE"]{
+        color: white;
+    }
+    .signUpArea a{
+        display: block; margin-top: 20px;
+        font-size: 15px; color: black; border: 1px solid black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .signUpCompleteArea div{
+        width: 44.9%; border: 1px solid black;
+        text-align: center; padding: 90px 0; 
+        color: #3c3c3c; font-weight: 500;
+    }
+    .signUpCompleteArea div h3{
+        font-size: 25px; text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .signUpCompleteArea div{
+        font-size: 22px;
+    }
+    .signUpCompleteArea a{
+        margin-top: 60px; font-size: 15px; background-color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .signInArea form fieldset ul li label{
+        font-size: 16px; color: black;
+    }
+    .signInArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .signInArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 45%; height: 48px; box-sizing: border-box;
+    }
+    .signInArea form input[value="SIGN IN"]{
+        color: white;
+    }
+    .signInArea div a{
+        display: inline-block; margin-top: 20px;
+        font-size: 15px; color: black; border: 1px solid black;
+        width: 21.5%; text-align: center; line-height: 48px;
+    }
+    .signInArea div a:first-of-type{
+        margin-right: 1.5%;
+    }
+    .resetPWArea h3{
+        color: #6c6c6c; margin-bottom: 50px;
+    }
+    .resetPWArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .resetPWArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .resetPWArea form fieldset ul li label{
+        font-size: 16px; color: black;
+    }
+    .resetPWArea form fieldset ul li input[type="email"]{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .resetPWArea form div > input{
+        border: none; font-size: 15px;
+        width: 22%; height: 48px; box-sizing: border-box;
+    }
+    .resetPWArea form div > input[type="button"]{
+        background-color: black; margin-right: 0.8%;
+        color: white;
+    }
+    .resetPWArea form div > input[type="reset"]{
+        color: black; border: 1px solid black;
+        background-color: transparent;
+    }
+    #confirmPopup{
+        position: absolute; top: 18%; left: 55.5%;
+        padding: 15px 0 70px 0;
+        border: 1px solid black; width: 35%;
+        box-sizing: border-box; text-align: center;
+    }
+    #confirmPopup input[type="button"]{
+        margin-left: 90%; 
+        width: 15px; height: 15px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    #confirmPopup h2{
+        font-size: 18px; color: #3c3c3c;
+        margin: 45px 0 30px 0; 
+    }
+    #confirmPopup a{
+        margin: 0 auto; width: 30%; padding: 15px 0;
+        display: block; background-color: black;
+        font-size: 15px; font-weight: 500;
+        text-transform: uppercase;
+    }
+    .myAccountEmptyArea div h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .myAccountEmptyArea div:first-of-type ul li{
+        color: #3c3c3c; display: block;
+        width: 45%; border: 1px solid black;
+        text-align: center; line-height: 48px;
+        font-size: 15px; font-weight: 400;
+    }
+    .myAccountEmptyArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c;
+        margin-bottom: 20px;
+    }
+    .myAccountEmptyArea div:last-of-type ul li p:last-child{
+        margin-top: 20px; color: #6c6c6c; margin-bottom: 35px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+    }
+    .myAccountEmptyArea a:first-of-type{
+        font-size: 15px; background-color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountEmptyArea a:last-of-type{
+        font-size: 15px; background-color: transparent;
+        border: 1px solid black; color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+        margin-top: 20px;
+    }
+    .myAccountFullArea h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .myAccountFullArea div:first-of-type:after{
+        content: ''; display: block; clear: both;
+    }
+    .myAccountFullArea div:first-of-type{
+        margin-bottom: 60px;
+        border: 1px solid black; width: 45%;
+        padding: 20px; box-sizing: border-box;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li{
+        font-size: 15px; font-weight: 400;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type{
+        margin-bottom: 30px;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type:after{
+        content: ''; display: block; clear: both;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:first-child{
+        float: left; width: 85%;
+    }
+    .myAccountFullArea div:first-of-type ul:first-of-type li:last-child a{
+        color: #3c3c3c; font-size: 15px; display: block;
+        float: right;
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li{
+        font-size: 16px; font-weight: 400;
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li:first-of-type{
+        float: left; width: 88%;
+        line-height: 24px;
+        text-transform: uppercase; 
+    }
+    .myAccountFullArea div:first-of-type ul:last-of-type li:last-of-type{
+        float: right; width: 12%; text-align: right; line-height: 24px;
+    }
+    .myAccountFullArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c; margin-bottom: 20px;
+    }
+    .myAccountFullArea div:last-of-type ul li p:last-child{
+        margin-top: 20px; color: #6c6c6c; margin-bottom: 35px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+    }
+    .myAccountFullArea > a:first-of-type{
+        display: block;
+        font-size: 15px; background-color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountFullArea > a:last-of-type{
+        font-size: 15px; background-color: transparent;
+        border: 1px solid black; color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+        margin-top: 20px;
+    }
+    .viewAccountArea h2{
+        float: left; width: 18%;
+    }
+    .viewAccountArea div h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .viewAccountArea > a{
+        display: inline-block; background-color: black;
+        text-align: center; width: 14%; margin-left: 13%; 
+        font-size: 12px; line-height: 40px;
+    }    
+    .viewAccountArea > a:after{
+        content: ''; display: block; clear: both;
+    }
+    .viewAccountArea div:last-of-type{
+        clear: both;
+    }
+    .viewAccountArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c;
+        margin-bottom: 20px;
+    }
+    .viewAccountArea div:last-of-type ul li:not(:last-of-type) p:last-child{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c; margin-bottom: 35px;
+    }
+    .viewAccountArea div:last-of-type ul li:last-child{
+        border: 1px solid black; width: 45%;
+        padding: 10px 10px 20px 25px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .viewAccountArea div:last-of-type ul li:last-child p:first-child{
+        margin-top: 5px;
+    }
+    .viewAccountArea div:last-of-type ul li:last-of-type p:last-child{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 96.5%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c;
+    }
+    .viewAccountArea div ul li:last-child input[type="button"]{
+        position: absolute; top: 10px; right: 10px;
+        width: 13px; height: 13px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    .viewAccountArea div a{
+        display: block; margin-top: 35px;
+        font-size: 15px; background-color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    #deletePopup{
+        position: absolute; top: 230px; left: 55.5%;
+        padding: 15px 0 70px 0;
+        border: 1px solid black; width: 35%;
+        box-sizing: border-box; text-align: center;
+        background-color: white;
+    }
+    #deletePopup h2{
+        font-size: 18px; color: #3c3c3c;
+        margin: 45px 0 30px 0; 
+    }
+    #deletePopup div{
+        padding: 0 29%; text-align: center;
+        margin: 0 auto;
+    }
+    #deletePopup div:after{
+        content: ''; display: block; clear: both;
+    }
+    #deletePopup div a{
+        float: left; display: block;
+        width: 43.5%; line-height: 42.5px;
+        color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box;
+    }
+    #deletePopup div input[type="button"]{
+        float: right; width: 43.5%; height: 45px; color: white;
+        background-color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box;
+    }
+    .viewAccountEmptyArea{
+        margin-bottom: 100px;
+    }
+    .viewAccountEmptyArea h2{
+        float: left; width: 18%;
+    }
+    .viewAccountEmptyArea div h3{
+        font-size: 16px; margin-bottom: 50px;
+    }
+    .viewAccountEmptyArea > a{
+        display: inline-block; background-color: black;
+        text-align: center; width: 14%; margin-left: 13%; 
+        font-size: 12px; line-height: 40px;
+    }    
+    .viewAccountEmptyArea > a:after{
+        content: ''; display: block; clear: both;
+    }
+    .viewAccountEmptyArea div:last-of-type{
+        clear: both;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li p:first-child{
+        font-size: 14px; color: #6c6c6c;
+        margin-bottom: 20px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:not(:last-of-type) p:last-child{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c; margin-bottom: 35px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-child{
+        border: 1px solid black; width: 45%;
+        padding: 10px 10px 20px 25px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-child p:first-child{
+        margin-top: 5px;
+    }
+    .viewAccountEmptyArea div:last-of-type ul li:last-of-type a{
+        display: block; margin-top: 20px;
+        text-align: center; box-sizing: border-box;
+        background-color: #f2f2f2; color: black;
+        width: 96.5%; line-height: 48px; 
+        font-size: 16px; text-transform: uppercase;
+    }
+    .viewAccountEmptyArea div > a{
+        display: block; margin-top: 35px;
+        font-size: 15px; background-color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .myAccountEditArea{
+        margin-bottom: 50px;
+    }
+    .myAccountEditArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 75px;
+        font-weight: 400;
+    }
+    .myAccountEditArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .myAccountEditArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .myAccountEditArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .myAccountEditArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .myAccountEditArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px; color: #6c6c6c;
+    }
+    .myAccountEditArea form div{
+        width: 50%;
+    }
+    .myAccountEditArea form div input[type='button']{
+        border: none; background-color: black; font-size: 15px;
+        width: 43%; height: 48px; box-sizing: border-box;
+        color: white; margin-right: 3%;
+    }
+    .myAccountEditArea form div input[type='reset']{
+        border: 1px solid black; background-color: transparent; font-size: 15px;
+        width: 43%; height: 48px; box-sizing: border-box;
+        color: black;
+    }
+    #editPopup{
+        position: absolute; top: 31%; left: 55.5%;
+        padding: 15px 0 70px 0;
+        border: 1px solid black; width: 35%;
+        box-sizing: border-box; text-align: center;
+    }
+    #editPopup input[type="button"]{
+        margin-left: 90%;
+        width: 15px; height: 15px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+    }
+    #editPopup h2{
+        font-size: 18px; color: #3c3c3c;
+        margin: 45px 0 30px 0; 
+    }
+    #editPopup a{
+        margin: 0 auto; width: 30%; padding: 15px 0;
+        display: block; background-color: black;
+        font-size: 15px; font-weight: 500;
+        text-transform: uppercase;
+    }
+    .myAccountEditEmptyArea{
+        margin-bottom: 50px;
+    }
+    .myAccountEditEmptyArea h3, 
+    .myAccountEditEmptyArea form fieldset legend,
+    .myAccountEditEmptyArea form fieldset ul li label,
+    .myAccountEditEmptyArea > input, .myAccountEditArea a{
+        font-weight: 400;
+    }
+    .myAccountEditEmptyArea h3{
+        font-size: 18px; color: #6c6c6c; margin-bottom: 75px;
+        font-weight: 400;
+    }
+    .myAccountEditEmptyArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .myAccountEditEmptyArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .myAccountEditEmptyArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .myAccountEditEmptyArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .myAccountEditEmptyArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+        color: #6c6c6c;
+    }
+    .myAccountEditEmptyArea form div{
+        width: 50%;
+    }
+    .myAccountEditEmptyArea form div input[type='button']{
+        border: none; background-color: black; font-size: 15px;
+        width: 43%; height: 48px; box-sizing: border-box;
+        color: white; margin-right: 3%;
+    }
+    .myAccountEditEmptyArea form div input[type='reset']{
+        border: 1px solid black; background-color: transparent; font-size: 15px;
+        width: 43%; height: 48px; box-sizing: border-box;
+        color: black;
+    }
+    .orderHistoryArea{
+        margin-bottom: 100px;
+    }
+    .orderHistoryArea > div{
+        width: 45%; padding: 20px; font-weight: 400;
+        border: 1px solid black; text-transform: uppercase;
+        box-sizing: border-box;
+    }
+    .orderHistoryArea div ul:first-child{
+        margin-bottom: 25px;
+    }
+    .orderHistoryArea div ul:first-child li:first-child{
+        font-size: 18px;
+    }
+    .orderHistoryArea div ul:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div ul:first-child li:first-child{
+        font-size: 16px; float: right;
+    }
+    .orderHistoryArea div img{
+        display: block; width: 18%; float: right;
+    }
+    .orderHistoryArea div img:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div div{
+        float: left; width: 78%; margin-right: 4%;
+    }
+    .orderHistoryArea div div h3{
+        margin-bottom: 8%; font-size: 16px; line-height: 22px;
+    }
+    .orderHistoryArea div div ul:not(:last-child){
+        color: #6c6c6c;
+    }
+    .orderHistoryArea div div:after{
+        content: ''; display: block; clear: both;
+    }
+    .orderHistoryArea div div ul:first-of-type{
+        height: 30px;
+    }
+    .orderHistoryArea div div ul:first-of-type li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:first-of-type li:last-child{
+        float: right; width: 50%; font-size: 16px; text-align: right;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2){
+        height: 15px;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2) li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:nth-of-type(2) li:last-child{
+        float: right; width: 50%; text-align: right; font-size: 16px;
+    }
+    .orderHistoryArea div div hr{
+        width: 100%;
+    }
+    .orderHistoryArea div div ul:last-of-type{
+        margin-bottom: 50px;
+    }
+    .orderHistoryArea div div ul:last-of-type li:first-child{
+        float: left; width: 50%; font-size: 14px;
+    }
+    .orderHistoryArea div div ul:last-of-type li:last-child{
+        float: right; width: 50%; font-size: 16px; font-weight: 500;
+        text-align: right;
+    }
+    .orderHistoryArea div ul:last-child{
+        clear: both; font-size: 14px; color: #6c6c6c;
+    }
+    .orderHistoryArea div ul:last-child li p:first-child{
+        margin-bottom: 20px;
+    }
+    .orderHistoryArea div ul:last-child li:first-child p:last-child{
+        margin-bottom: 35px;
+    }
+    .orderHistoryArea div ul:last-child li p:last-child{
+        display: block; border: none;
+        background-color: #f2f2f2;
+        line-height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 14px;
+        color: #6c6c6c; 
+    }
+    .orderHistoryArea a{
+        display: block; margin-top: 60px;
+        font-size: 15px; background-color: black;
+        width: 45%; box-sizing: border-box;
+        text-align: center; line-height: 48px;
+    }
+    .aboutArea h2{
+        margin-bottom: 75px;
+        color: #3c3c3c;
+    }
+    .aboutArea > p, .aboutArea ul li{
+        font-size: 16px; font-weight: 400; line-height: 36px;
+        color: #6c6c6c;
+    }
+    .aboutArea > p{
+        font-size: 16px; font-weight: 400; text-transform: uppercase; margin-bottom: 50px;
+    }
+    .aboutArea div{
+        float: left; width: 45%; margin-right: 5%; margin-bottom: 100px;
+    }
+    .aboutArea div:after{
+        content: ''; display: block; clear: both;
+    }
+    .aboutArea div img{
+        margin-bottom: 50px;
+    }
+    .aboutArea div p, .aboutArea ul li{
+        font-size: 18px; font-weight: 400; line-height: 36px;
+        color: #6c6c6c;
+    }
+    .aboutArea ul{
+        float: right; width: 45%; margin-right: 5%;
+    }
+    .aboutArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .aboutArea ul li:not(:last-child){
+        margin-bottom: 40px;
+    }
+    .aboutArea div p, .aboutArea ul li{
+        font-size: 18px; color: #6c6c6c; line-height: 36px;
+    }
+    .contactUsArea{
+        margin-bottom: 100px;
+    }
+    .contactUsArea > p{
+        color: #6c6c6c; margin-bottom: 75px;
+        line-height: 36px;
+        width: 45%; white-space: pre-line;
+    }
+    .contactUsArea form fieldset legend{
+        font-size: 16px; margin-bottom: 40px;
+    }
+    .contactUsArea form fieldset ul li:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .contactUsArea form fieldset ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .contactUsArea form fieldset ul li label{
+        font-size: 14px; color: #6c6c6c;
+    }
+    .contactUsArea form fieldset ul li input{
+        display: block; margin-top: 20px;
+        background-color: #f2f2f2; border: none;
+        width: 45%; height: 48px; box-sizing: border-box;
+        padding-left: 10px; font-size: 15px;
+    }
+    .contactUsArea form input{
+        border: none; background-color: black; font-size: 15px;
+        width: 45%; height: 48px; box-sizing: border-box;
+    }
+    .contactUsArea form input[value="SEND"]{
+        color: white;
+    }
+    #sendPopup{
+        position: absolute; top: 41%; left: 55.5%;
+        padding: 15px 0 80px 0;
+        border: 1px solid black; width: 35%;
+        box-sizing: border-box; text-align: center;
+    }
+    #sendPopup input[type="button"]{
+        margin-left: 90%;
+        width: 15px; height: 15px; border: none;
+        background: url('images/ico_close_black.png') center no-repeat;
+    }
+    #sendPopup h2{
+        margin-top: 65px; font-size: 25px; font-weight: 500;
+        text-transform: uppercase; color: #3c3c3c;
+        margin-bottom: 30px;
+    }
+    #sendPopup p{
+        font-size: 22px; font-weight: 500; color: #3c3c3c;
+    }
+    .cartEmptyArea{
+        margin-bottom: 100px;
+    }
+    .cartEmptyArea h2{
+        margin-bottom: 75px; color: #3c3c3c; text-transform: uppercase;
+    }
+    .cartEmptyArea{
+        content: ''; display: block; clear: both;
+    }
+    .cartEmptyArea img{
+        float: right; width: 40%; margin-right: 5%;
+    }
+    .cartEmptyArea div{
+        float: left; width: 45%; margin-right: 5%;
+    }
+    .cartEmptyArea div p{
+        width: 100%; font-size: 15px; line-height: 48px;
+        text-align: center;
+        border: 1px solid black; box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+    .cartEmptyArea div a{
+        width: 100%; line-height: 48px; display: block;
+        background-color: black; box-sizing: border-box;
+        text-align: center;
+    }
+    .confirmArea{
+        margin-bottom: 100px;
+    }
+    .confirmArea h2{
+        font-size: 24px; text-transform: uppercase; color: #3c3c3c;
+        margin-bottom: 60px;
+    }
+    .confirmArea > p, 
+    .confirmArea div h3{
+        font-size: 16px; font-weight: 400; text-transform: uppercase;
+    }
+    .confirmArea > div h3{
+        margin-bottom: 25px;
+    }
+    .confirmArea > div:first-of-type{
+        margin-top: 50px; padding: 20px; width: 45%;
+        border: 1px solid black; box-sizing: border-box;
+        margin-bottom: 35px;
+    }
+    .confirmArea > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type img{
+        float: right; width: 18%; display: block;
+    }
+    .confirmArea > div:first-of-type > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type > div > div{
+        float: left; width: 78%; padding-right: 4%;
+    }
+    .confirmArea > div:first-of-type > div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea > div:first-of-type > div > div:first-of-type p:first-child{
+        float: left; font-size: 20px; font-weight: 400;
+    }
+    .confirmArea > div:first-of-type > div > div:first-of-type p:last-child{
+        float: right; box-sizing: border-box; font-weight: 400;
+        text-align: right;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type{
+        margin-top: 17%;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type p:first-child{
+        float: left; width: 10%; font-size: 14px; color: #7d7d7d;
+        margin-right: 57%;
+    }
+    .confirmArea > div:first-of-type > div > div:last-of-type p:last-child{
+        float: right; width: 23%; text-align: right;
+    }
+    .confirmArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea ul{
+        width: 45%;
+    }
+    .confirmArea ul li:first-child{
+        font-size: 14px; text-transform: uppercase; font-weight: 400;
+        float: left; width: 30%; line-height: 22px;
+    }
+    .confirmArea ul li:last-child{
+        font-size: 22px; font-weight: 500;
+        float: right;
+    }
+    .confirmArea ul:not(:first-of-type) li{
+        margin-top: 25px;
+    }
+    .confirmArea ul:not(:last-child) li:first-child{
+        color: #7d7d7d;
+    }
+    .confirmArea > div:last-child a{
+        font-size: 15px; font-weight: 400; text-transform: uppercase; 
+        display: block; width: 45%; text-align: center;
+        line-height: 48px; box-sizing: border-box;
+        margin-top: 50px;
+    }
+    .confirmArea div:last-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .confirmArea div:last-child a:first-child{
+        background-color: black; float: left; width: 22%;
+        border: 1px solid black;
+    }
+    .confirmArea div:last-child a:last-child{
+        float: left; width: 22%; margin-left: 1%;
+        border: 1px solid black; color: black;
+    }
+    .cartArea > div:first-child{
+        width: 45%; margin-bottom: 65px;
+    }
+    .cartArea > div:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea > div:first-child h2{
+        color: #3c3c3c; float: left; width: 50%;
+    }
+    .cartArea > div:first-child > input[value="Remove all"]:first-of-type{
+        float: right; width: 105px; line-height: 40px;
+        background-color: black; color: white; border: none;
+        font-size: 12px; font-weight: 400;
+    }
+    .cartArea > img{
+        float: right; width: 40%; margin-right: 5%;
+    }
+    .cartArea section{
+        float: left; width: 45%; margin-right: 5%;
+    }
+    .cartArea section > div:first-child:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child{
+        padding: 20px; border: 1px solid black; margin-bottom: 30px;
+    }
+    .cartArea section > div:first-child h3{
+        float: left; font-size: 16px; font-weight: 400; text-transform: uppercase;
+        line-height: 24px; float: left; width: 95%; margin-bottom: 25px;
+    }
+    .cartArea section > div:first-child .openPop{
+        float: right; width: 13px; height: 13px; border: none;
+        background: url('../images/ico_close_black.png') center no-repeat;
+        margin-top: 5px;
+    }
+    .cartArea section > div:first-child > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child > div img{
+        float: right; width: 18%; display: block;
+    }
+    .cartArea section > div:first-child > div > p{
+        float: left; width: 10%;
+        font-size: 20px; font-weight: 400;
+    }
+    .cartArea section > div:first-child > div > div:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:first-child > div > div{
+        float: right; width: 30%; text-align: right;
+        margin-right: 5%;
+    }
+    .cartArea section > div:first-child > div > div input[value="-"]{
+        background: url('../images/btn_minus.png') no-repeat center;
+        border: none;
+    }
+    .cartArea section > div:first-child > div > div input[type='number']{
+        margin: 0 10%; border: none; text-align: center;
+        font-size: 20px;
+    }
+    .cartArea section > div:first-child > div > div input[type='number']::-webkit-outer-spin-button,
+    .cartArea section > div:first-child > div > div input[type='number']::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .cartArea section > div:first-child > div > div input[value="+"]{
+        background: url('../images/btn_plus.png') no-repeat center;
+        border: none;
+    }
+    .cartArea section > div:nth-child(2){
+        margin-bottom: 60px;
+    }
+    .cartArea section > div:nth-child(2):after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:nth-child(2) p:first-child{
+        float: left; font-size: 14px; font-weight: 400;
+        color: #7d7d7d; line-height: 22px;
+    }
+    .cartArea section > div:nth-child(2) strong{
+        float: right; font-size: 22px; font-weight: 600;
+    }
+    .cartArea section > p{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+        text-transform: uppercase;
+    }
+    .cartArea section > input[type="text"]{
+        margin-top: 20px; width: 100%; padding: 5px 5px 80px 5px;
+        box-sizing: border-box; border: none;
+        background-color: #f2f2f2; font-size: 16px;
+        margin-bottom: 35px;
+    }
+    .cartArea section > a{
+        width: 100%; line-height: 48px; color: black;
+        border: 1px solid black; display: block;
+        box-sizing: border-box; text-align: center;
+        margin-bottom: 20px;
+    }
+    .cartArea section > div:last-of-type:after{
+        content: ''; display: block; clear: both;
+    }
+    .cartArea section > div:last-of-type{
+        margin-bottom: 100px;
+    }
+    .cartArea section > div:last-of-type > p{
+        float: left; width: 90.6%;
+        font-size: 14px; font-weight: 400; text-transform: uppercase;
+        color: #7d7d7d;
+    }
+    .cartArea section > div:last-of-type > img{
+        float: right; width: 9.4%; display: block;
+    }
+    #cartPopup{
+        position: absolute; top: 187px; left: 57.1%;
+        padding: 15px 0 70px 0;
+        border: 1px solid black; width: 34%;
+        box-sizing: border-box; text-align: center;
+        background-color: white;
+    }
+    #cartPopup h2{
+        font-size: 18px; color: #3c3c3c;
+        margin: 45px 0 30px 0; 
+    }
+    #cartPopup div{
+        padding: 0 29%; text-align: center;
+        margin: 0 auto;
+    }
+    #cartPopup div a:after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPopup div a{
+        float: left; display: block;
+        width: 43.5%; line-height: 42.5px;
+        color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box;
+    }
+    #cartPopup div input[type="button"]{
+        width: 43.5%; height: 45px; color: white;
+        background-color: black; border: 1px solid black;
+        font-size: 15px; font-weight: 500;
+        box-sizing: border-box; margin-left: 13%;
+    }
+    .paymentArea, .payment2Area{
+        text-transform: uppercase;
+    }
+    .paymentArea > h3{
+        font-size: 18px; font-weight: 400; margin-bottom: 80px; color: #7d7d7d;
+    }
+    .PaymentDetails{
+        float: right; width: 45%; margin-right: 5%;
+    }
+    .PaymentDetails > div{
+        padding: 20px; border: 1px solid black; margin-bottom: 30px;
+    }
+    .PaymentDetails > div h3{
+        font-size: 16px; font-weight: 400; margin-bottom: 25px;
+    }
+    .PaymentDetails > div div:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > div div img{
+        float: right; width: 18%; display: block;
+    }
+    .PaymentDetails > div div div{
+        float: left; width: 82%;
+    }
+    .PaymentDetails > div div div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > div div div ul li:first-child{
+        float: left; 
+    }
+    .PaymentDetails > div div div ul li:last-child{
+        float: right; margin-right: 20px;
+    }
+    .PaymentDetails > div div div ul:first-child{
+        margin-bottom: 20%;
+    }
+    .PaymentDetails > div div div ul:first-child li{
+        font-size: 20px; font-weight: 400;
+    }
+    .PaymentDetails > div div div ul:first-child li:last-child{
+        text-transform: none;
+    }
+    .PaymentDetails > div div div ul:last-child li:first-child{
+        font-size: 14px; font-weight: 400; color: #7d7d7d; padding-top: 8px;
+    }
+    .PaymentDetails > div div div ul:last-child li:last-child{
+        font-size: 22px; font-weight: 500; 
+    }
+    .PaymentDetails > ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .PaymentDetails > ul li:first-child{
+        float: left;
+    }
+    .PaymentDetails > ul li:last-child{
+        float: right;
+    }
+    .PaymentDetails > ul:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .PaymentDetails > ul:not(:last-child) li:first-child,
+    .paymentArea section:last-child form fieldset label{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+    }
+    .PaymentDetails > ul:not(:last-child) li:last-child{
+        font-size: 22px; font-weight: 500; 
+    }
+    .PaymentDetails > ul:last-child li:first-child{
+        font-size: 14px; font-weight: 400;
+    }
+    .PaymentDetails > ul:last-child li:last-child{
+        font-size: 22px; font-weight: 600;
+    }
+    .paymentArea section:last-child{
+        float: left; width: 45%; margin-right: 5%;
+    }
+    .paymentArea section:last-child p{
+        font-size: 16px; font-weight: 400; margin-bottom: 50px;
+    }
+    .paymentArea section:last-child form fieldset > input[type="email"],
+    .paymentArea section:last-child form fieldset ul li input{
+        display: block; background-color: #f2f2f2; border: none;
+        height: 48px; margin-top: 20px; padding-left: 10px;
+    }
+    .paymentArea section:last-child form fieldset > input[type="email"]{
+        margin-bottom: 10px; width: 100%; box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p{
+        text-align: right;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p input[type="checkbox"]{
+        appearance: none; width: 15px; height: 15px;
+        background: url('../images/ico_check.png') center center;
+    }
+    .paymentArea section:last-child form fieldset:first-child > p input[type="checkbox"]:checked{
+        background: url('../images/ico_checked.png') center center;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:first-child select{
+        display: block; border: none; 
+        width: 100%; height: 48px;
+        background-color: #f2f2f2; padding-left: 10px;
+        color: #7d7d7d; font-size: 14px;
+        margin: 20px 0 35px 0;
+        box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:not(:nth-child(3)):not(:nth-child(4)) input{
+        width: 100%; margin-bottom: 35px;
+        box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(3){
+        float: left; width: 44%; margin-right: 2%;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(3) input,
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(4) input{
+        width: 100%; margin-bottom: 35px;
+        box-sizing: border-box;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(4){
+        float: right; width: 44%;
+    }
+    .paymentArea section:last-child form fieldset:last-of-type ul li:nth-child(5):before{
+        content: ''; display: block; clear: both;
+    }
+    .paymentArea section:last-child form > input{
+        width: 100%; height: 48px; border: none;
+        color: white; background-color: black;
+        font-size: 15px; font-weight: 400; text-transform: uppercase;
+        box-sizing: border-box; display: block;
+        margin-bottom: 100px;
+    }
+    .payment2Area > h3{
+        margin-bottom: 80px; color: #7d7d7d;
+    }
+    .payment2Area section:last-of-type{
+        float: left; width: 45%; margin-right: 5%;
+    }
+    .payment2Area section:last-of-type h3{
+        font-size: 16px; font-weight: 400; margin-bottom: 50px;
+    }
+    .payment2Area section:last-of-type fieldset p{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+        margin-bottom: 20px;
+    }
+    .payment2Area section:last-of-type fieldset:first-child{
+        margin-bottom: 35px;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div{
+        display: flex; flex-direction: row;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="text"]{
+        width: 39%; height: 48px;
+        margin: 3px 1% 0 0; padding-left: 10px;
+        background-color: #f2f2f2; border: none;
+        box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]{
+        width: 20%; height: 48px; border: 1px solid black;
+        background: no-repeat center center;
+        cursor: pointer; appearance: none;
+        box-sizing: border-box;
+        background-size: 108px 40px;
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(2){
+        background-image: url('../images/ico_paypal.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(3){
+        background-image: url('../images/ico_master.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:nth-of-type(4){
+        background-image: url('../images/ico_visa.png');
+    }
+    .payment2Area section:last-of-type fieldset:first-child div input[type="radio"]:checked{
+        border: 3px solid #4cc7a3;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul{
+        float: left; width: 33.33%;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li label{
+        margin-bottom: 20px; display: block;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li select{
+        display: block; width: 90%; height: 48px;
+        background-color: #f2f2f2; border: none;
+        padding: 0 10px; color: #7d7d7d; box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul:last-of-type li:last-child input{
+        width: 100%; height: 48px; background-color: #f2f2f2;
+        border: none; box-sizing: border-box;
+    }
+    .payment2Area section:last-of-type fieldset:last-child ul li:last-child{
+        margin-bottom: 60px;
+    }
+    .payment2Area section:last-of-type fieldset:last-of-type > input[type="submit"]{
+        display: block; background-color: black; color: white; 
+        width: 100%; height: 48px; border: none; 
+        font-size: 15px; font-weight: 400;
+        text-align: center; text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+    .payment2Area section:last-of-type > ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .payment2Area section:last-of-type > ul{
+        margin-bottom: 100px;
+    }
+    .payment2Area section:last-of-type > ul li{
+        float: left;
+    }
+    .payment2Area section:last-of-type > ul li:not(:last-child){
+        margin-right: 20px;
+    }
+    .payment2Area section:last-of-type > ul li a{
+        color: #7d7d7d; font-size: 10px; text-decoration: underline;
+    }
+    .shippingReturnArea h2{
+        color: #3c3c3c; margin-bottom: 30px; text-transform: uppercase;
+    }
+    .shippingReturnArea h3{
+        font-size: 16px; color: black; font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .shippingReturnArea p{
+        font-size: 18px; font-weight: 400;
+        color: #6c6c6c; margin-bottom: 30px;
+    }
+    .shippingReturnArea ul{
+        font-size: 14px; color: #6c6c6c; font-weight: 400;
+        width: 50%; 
+    }
+    .shippingReturnArea ul li{
+        line-height: 24px;
+    }
+    .shippingReturnArea ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .shippingReturnArea ul li:last-child{
+        margin-bottom: 50px;
+    }
+    .termsServiceArea{
+        padding: 80px 0 0 118px;
+    }
+    .termsServiceArea h2{
+        color: #3c3c3c; margin-bottom: 30px; text-transform: uppercase;
+    }
+    .termsServiceArea h3{
+        font-size: 16px; color: black; font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .termsServiceArea p{
+        font-size: 18px; font-weight: 400;
+        color: #6c6c6c; margin-bottom: 30px;
+    }
+    .termsServiceArea ul{
+        font-size: 14px; color: #6c6c6c; font-weight: 400;
+        width: 50%; 
+    }
+    .termsServiceArea ul li{
+        line-height: 24px;
+    }
+    .termsServicenArea ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .termsServiceArea ul li:last-child{
+        margin-bottom: 50px;
+    }  
+    .PrivacyArea, 
+    .refundArea{
+        width: 50%;
+    }
+    .PrivacyArea h2,
+    .refundArea section:first-child h2{
+        text-transform: uppercase; margin-bottom: 75px; color: #3c3c3c;
+    }
+    .PrivacyArea article h3{
+        font-size: 16px; font-weight: 400; text-transform: uppercase; color: black;
+        margin-bottom: 32px;
+    }
+    .PrivacyArea article p{
+        color: #7d7d7d; font-weight: 400;
+    }
+    .PrivacyArea article:first-child p{
+        font-size: 18px; line-height: 36px;
+    }
+    .PrivacyArea article:not(:first-child) h3{
+        margin-top: 50px;
+    }
+    .PrivacyArea article:not(:first-child) p{
+        font-size: 14px; line-height: 24px; margin-bottom: 30px;
+    }
+    .PrivacyArea article:nth-child(2) p:nth-of-type(2){
+        font-size: 18px;
+    }
+    .PrivacyArea article ul li{
+        font-size: 14px; line-height: 24px; color: #7d7d7d;
+    }
+    .PrivacyArea article ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .PrivacyArea article h4{
+        font-size: 14px; font-weight: 400; color: #7d7d7d;
+        margin: 30px 0 20px 0;
+    }
+    .refundArea section:first-child h3{
+        font-size: 16px; text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .refundArea section p, .refundArea section ul{
+        color: #7d7d7d;
+    }
+    .refundArea section:first-child p{
+        font-size: 18px; line-height: 36px;
+    }
+    .refundArea section:first-child p:first-child{
+        margin-bottom: 30px;
+    }
+    .refundArea section:not(:first-child) h3{
+        font-size: 22px; color: #7d7d7d; font-weight: 400;
+        margin: 50px 0 30px 0;
+    }
+    .refundArea section:not(:first-child) p, 
+    .refundArea section ul li{
+        line-height: 24px;
+    }
+    .refundArea section:nth-child(2) p:first-of-type,
+    .refundArea section ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+/* desktop */

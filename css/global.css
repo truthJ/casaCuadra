@@ -1,0 +1,539 @@
+.allMenu, .contentsArea, .introArea, .productListArea,
+.signUpArea, .signUpCompleteArea, .signInArea, .resetPWArea,
+#confirmPopup, .shippingReturnArea, .myAccountEmptyArea,
+.myAccountFullArea, .viewAccountArea, .viewAccountEmptyArea,
+.myAccountEditArea, #editPopup, #deletePopup,
+.myAccountEditArea form fieldset ul li input[type='text'],
+.myAccountEditEmptyArea, #sendPopup, #cartPopup,
+.myAccountEditEmptyArea form fieldset ul li input[type='text'],
+.orderHistoryArea, .aboutArea, .contactUsArea, .PrivacyArea,
+.refundArea, .cartEmptyArea, .confirmArea, .cartArea, .paymentArea, 
+.payment2Area, #loginPopup{
+    font-family: 'Raleway';
+}
+.allMenu, .contentsArea, .optionArea div h2{
+    text-transform: uppercase;
+}
+.numUrban, .infoArea, .PrivacyArea p, .refundArea p, .refundArea ul{
+    font-family: 'numUrban';
+}
+ul, ol{
+    list-style: none;}
+a{
+    text-decoration: none; color: white;
+}
+.allMenu.active{
+    display: block; margin-top: 0;
+}
+.selectBox{
+    position: relative;
+}
+.selectBox:after{
+    content: url('../images/triangle_bottom.png'); position: absolute; top: 15px; right: 20px; display: block;
+}
+.selectBox.active:after{
+    transform: rotate(180deg);
+}
+.selectBox li{
+    display: none;
+}
+.selectBox.active li, .selectBox li.active{
+    display: block;
+}
+[id$='Popup']{
+    display: none;
+}
+[id$='Popup'].active{
+    display: block;
+}
+@media screen and (max-width: 767px){
+    header{
+        margin-top: 15px;
+    }
+    header input[type='button']{
+        background: url('../images/btn_menu.png') no-repeat;
+        background-size: 55px 55px; text-indent: -9999px;
+        width: 55px; height: 55px; z-index: 100;
+        border: none; cursor: pointer;
+        margin-left: 5%;
+    }
+    header h1:after{
+        content: ''; display: block; clear: both;
+    }
+    header h1{
+        min-width: 130px; line-height: 55px; float: right;
+        margin-right: 5%;
+    }
+    header h1 a{
+        display: block;
+        text-indent: -9999px;
+        background: url('../images/casacuadra_logo.png') center no-repeat;
+        background-size: 100%;
+    }
+    .allMenu{
+        display: none; width: 100%; max-width: 1540px; margin: auto;
+        position: fixed; z-index: 1; top: 0;
+        margin-bottom: 0; padding-bottom: 38px; background-color: rgba(60,60,60);
+    }
+    .allMenu input[type='button']{
+        margin: 2.2%; text-indent: -9999px; width: 16px; height: 16px;
+        border: none; background: url('../images/ico_close.png') no-repeat center;
+        cursor: pointer;
+    }
+    .allMenu div:nth-child(2) ul{
+        margin-left: 6.5%; margin-right: 6.5%;
+        float: left; width: 60%;
+    }
+    .allMenu div:nth-child(2) ul li{
+        line-height: 25px;
+    }
+    .allMenu div:nth-child(2) ul li:first-child{
+        padding: 10px; font-size: 18px; font-weight: 400;
+    }
+    .allMenu div:nth-child(2) ul li:first-child a{
+        color: #6c6c6c;
+    }
+    .allMenu div:nth-child(2) ul li:first-child:hover{
+        background-color: black;
+    }
+    .allMenu div:nth-child(2) ul li:first-child:hover a{
+        color: white;
+    }
+    .allMenu div:nth-child(2) ul:first-child li:first-child{
+        margin-top: 30px;
+    }
+    .allMenu div:nth-child(2) ul:first-child li:nth-child(2),
+    .allMenu div:nth-child(2) ul:not(:first-child) li:not(:first-child){
+        display: none;
+    }
+    .allMenu div:nth-child(2) ul:first-child li:not(:first-child){
+        margin-left: 5%; line-height: 36px; 
+    }
+    .allMenu > span{
+        width: 40%;
+    }
+    .allMenu > span a{
+        display:inline-block; text-indent: -9999px; 
+        background-repeat: no-repeat; background-position: center;
+        width: 30px; height: 28px;
+    }
+    .allMenu > span a:first-of-type{
+        background-image: url('../images/ico_my.png');
+        margin-right: 5px;
+    }
+    .allMenu > span a:last-of-type{
+        background-image: url('../images/ico_busket.png');
+    }
+    .allMenu div:nth-child(4){
+        margin: 0 auto; text-align: center;
+    }
+    .allMenu div:nth-child(4) input[type='search']{
+        background-color: transparent; border: 1px solid white;
+        width: 70%; height: 45px; padding: 0 50px 0 10px;
+        background: url('../images/ico_search.png') no-repeat right 20px center;
+        margin: 20px 0; font-size: 16px; color: white;
+    }
+    footer div{
+        margin: 0 0 15px 7.5%;
+    }
+    footer div p{
+        display: block; text-transform: none; color: #6c6c6c;
+    }
+    footer div p:first-child{
+        margin-bottom: 15px;
+    }
+    footer div p:last-of-type,
+    footer div a{
+        display: none;
+    }
+    footer span{
+        margin-left: 7.5%;
+    }
+    footer span a{
+        display: inline-block; text-indent: -9999px;
+        width: 26px; height: 26px; background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer span a:first-child{
+        background-image: url('../images/ico_sns_01.png');
+        margin-right: 3%;
+    }
+    footer span a:nth-child(2){
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer span a:last-child{
+        background-image: url('../images/ico_sns_03.png');
+        margin-left: 3%;
+    }
+    .paging{
+        margin: 0 auto; padding: 0 5% 20px 5%;
+    }
+        .paging:before{
+        content: ''; display: block; clear: both;
+    }
+    .paging{
+        margin-bottom: 50px;
+    }
+    .paging a{
+        color: #6c6c6c; font-size: 15px; font-family: 400; float: left;
+    }
+    .paging a{
+        width: 45px; line-height: 45px; background-color: #f4f4f4;
+    }
+    .paging ol li{
+        text-align: center;
+    }
+    .paging ol li:not(:first-of-type) a{
+        margin-left: 12px;
+    }
+    .paging > a:last-child{
+        background: url('../images/triangle_next.png') no-repeat center;
+        background-color: #f4f4f4; text-indent: -9999px; margin-left: 12px;
+    }
+    .paging > a:first-child{
+        display: none;
+    }
+    .paging ol li:nth-of-type(n+4){
+        display: none;
+    }
+    .paging .active{
+        background-color: #6c6c6c; color: white;
+    }
+}
+/* mobile */
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header{
+        margin-top: 30px;
+    }
+    header input[type='button']{
+        background: url('../images/btn_menu.png') no-repeat;
+        background-size: 55px 55px; text-indent: -9999px;
+        width: 55px; height: 55px; margin-left: 5%; z-index: 100;
+        border: none; cursor: pointer;
+    }
+    header h1{
+        width: 177px; line-height: 55px; float: right;
+        padding-right: 5%;
+    }
+    header h1 a{
+        display: block; 
+        text-indent: -9999px;
+        background: url('../images/casacuadra_logo.png') center no-repeat;
+        background-size: 100%;
+    }
+    .allMenu{
+        display: none; max-width: 1540px; margin: 50px auto;
+        position: fixed; width: 100%; z-index: 1; margin-bottom: 0;
+        padding-bottom: 38px; background-color: rgba(60,60,60);
+    }
+    .allMenu input[type='button']{
+        margin: 1.62%; text-indent: -9999px; width: 17px; height: 17px;
+        border: none; background: url('../images/ico_close.png') no-repeat center;
+        cursor: pointer;
+    }
+    .allMenu div:nth-child(2) ul{
+        float: left; width: 20%;
+    }
+    .allMenu div:nth-child(2) ul li{
+        line-height: 32px;
+    }
+    .allMenu div:nth-child(2) ul li:not(:first-child){
+        font-size: 18px; font-weight: 500;
+    }
+    .allMenu div:nth-child(2) ul li:first-child{
+        margin-bottom: 40px; position: relative;
+        font-size: 13px; font-weight: 400;
+        pointer-events: none;
+    }
+    .allMenu div:nth-child(2) ul li:first-child a{
+        color: rgba(108,108,108);
+    }
+    .allMenu div:nth-child(2) ul li:first-child:after{
+        position: absolute; content: ''; display: inline;
+        width: 13px; border-top: 1px solid rgba(108,108,108);
+        margin-left: 5px; top: 50%;
+    }
+    .allMenu div:nth-child(2) ul:first-child{
+        margin-left: 6.5%;
+    }
+    .allMenu div:nth-child(2) ul:first-child li:not(:first-child){
+        margin-bottom: 26px;
+    }
+    .allMenu div:nth-child(2) ul:first-child,
+    .allMenu div:nth-child(2) ul:nth-child(2),
+    .allMenu div:nth-child(2) ul:nth-child(3),
+    .allMenu div:nth-child(2) ul:nth-child(4){
+        margin-right: 8.44%;
+    }
+    .allMenu div:nth-child(2) ul:nth-child(2),
+    .allMenu div:nth-child(2) ul:nth-child(3){
+        margin-bottom: 80px;
+    }
+    .allMenu div:nth-child(2) ul:nth-child(5) li:last-child a{
+        display: inline-block; width: 102px; word-wrap: break-word;
+    }
+    .allMenu > span{
+        clear: both;
+    }
+    .allMenu > span a{
+        display:inline-block; text-indent: -9999px; 
+        background-repeat: no-repeat; background-position: center;
+        width: 30px; height: 28px;
+    }
+    .allMenu > span a:first-of-type{
+        background-image: url('../images/ico_my.png');
+        margin-right: 25px; margin-bottom: 25px;
+    }
+    .allMenu > span a:last-of-type{
+        background-image: url('../images/ico_busket.png');
+    }
+    .allMenu div:nth-child(4):before{
+        content: ''; display: block; clear: both;
+    }
+    .allMenu div:nth-child(4){
+        margin: 0 auto; text-align: center;
+    }
+    .allMenu div:nth-child(4) input[type='search']{
+        background-color: transparent; border: 1px solid white;
+        width: 70%; height: 52px; padding: 0 50px 0 10px;
+        background: url('../images/ico_search.png') no-repeat right 20px center;
+        margin: 30px 0 50px 0; font-size: 16px; color: white;
+    }
+    footer div{
+        float: left; width: 73%; margin-left: 6.5%;
+    }
+    footer div p{
+        display: inline; text-transform: none; color: #6c6c6c;
+    }
+    footer div p:first-child{
+        font-size: 13px; margin-right: 25px;
+    }
+    footer div p:last-of-type{
+        font-weight: 500; font-size: 12px; margin-right: 4px;
+    }
+    footer div a{
+        font-weight: 500; font-size: 13px;
+    }
+    footer span a{
+        display: inline-block; text-indent: -9999px;
+        width: 26px; height: 26px; background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer span a:first-child{
+        background-image: url('../images/ico_sns_01.png');
+        margin-right: 1.2%;
+    }
+    footer span a:nth-child(2){
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer span a:last-child{
+        background-image: url('../images/ico_sns_03.png');
+        margin-left: 1.2%;
+    }
+    .paging{
+        margin: 0 auto; padding: 0 5% 0 5%;
+    }
+
+    .paging:before{
+        content: ''; display: block; clear: both;
+    }
+    .paging{
+        margin-bottom: 50px;
+    }
+    .paging a{
+        color: #6c6c6c; font-size: 15px; font-family: 400; float: left;
+    }
+    .paging a{
+        width: 45px; line-height: 45px; background-color: #f4f4f4;
+    }
+    .paging ol li{
+        text-align: center;
+    }
+    .paging ol li:not(:first-of-type) a{
+        margin-left: 12px;
+    }
+    .paging > a:last-child{
+        background: url('../images/triangle_next.png') no-repeat center;
+        background-color: #f4f4f4; text-indent: -9999px; margin-left: 12px;
+    }
+    .paging > a:first-child{
+        display: none;
+    }
+    .paging ol li:nth-of-type(n+9){
+        display: none;
+    }
+    .paging .active{
+        background-color: #6c6c6c; color: white;
+    }
+}
+/* tablet */
+
+@media screen and (min-width: 1280px){
+    .allMenu.allMenu.active{
+        margin-top: 50px;
+    }
+    body{
+        padding: 0 5% 50px 5%;
+    }
+    header{
+        position: relative;
+    }
+    header input[type='button']{
+        position: absolute; top: 50px; left: -20px;
+        background: url('../images/btn_menu.png') no-repeat;
+        background-size: 55px 55px; text-indent: -9999px;
+        width: 55px; height: 55px; z-index: 100;
+        border: none; cursor: pointer; 
+    }
+    header h1{
+        position: absolute; top: 50px; right: 0; 
+        width: 13.25%; line-height: 34px;
+        padding-right: 5%;
+    }
+    header h1 a{
+        display: block; 
+        text-indent: -9999px;
+        background: url('../images/casacuadra_logo.png') center no-repeat;
+        background-size: 100%;
+    }
+    .allMenu{
+        display: none; margin: 0 auto;
+        position: fixed; width: 82%; z-index: 1; left: 9%;
+        margin-bottom: 0; padding-bottom: 38px; background-color: rgba(60,60,60);
+    }
+    .allMenu input[type='button']{
+        margin: 1.62%; text-indent: -9999px; width: 17px; height: 17px;
+        border: none; background: url('../images/ico_close.png') no-repeat center;
+        cursor: pointer;
+    }
+    .allMenu div:nth-child(2) ul{
+        float: left;
+    }
+    .allMenu div:nth-child(2) ul li{
+        line-height: 32px;
+    }
+    .allMenu div:nth-child(2) ul li:not(:first-child){
+        font-size: 18px; font-weight: 500;
+    }
+    .allMenu div:nth-child(2) ul li:first-child{
+        margin-bottom: 40px; position: relative;
+        font-size: 13px; font-weight: 400;
+        pointer-events: none;
+    }
+    .allMenu div:nth-child(2) ul li:first-child a{
+        color: rgba(108,108,108);
+    }
+    .allMenu div:nth-child(2) ul li:first-child:after{
+        position: absolute; content: ''; display: inline;
+        width: 13px; border-top: 1px solid rgba(108,108,108);
+        margin-left: 5px; top: 50%;
+    }
+    .allMenu div:nth-child(2) ul:first-child{
+        margin-left: 6.5%; 
+    }
+    .allMenu div:nth-child(2) ul:first-child li:not(:first-child){
+        margin-bottom: 26px;
+    }
+    .allMenu div:nth-child(2) ul:nth-child(2){
+        margin-left: 5.32%;
+    }
+    .allMenu div:nth-child(2) ul:nth-child(3),
+    .allMenu div:nth-child(2) ul:nth-child(4),
+    .allMenu div:nth-child(2) ul:nth-child(5){
+        margin-left: 8.44%;
+    }
+    .allMenu div:nth-child(2) ul:nth-child(5) li:last-child a{
+        display: inline-block; width: 102px; word-wrap: break-word;
+    }
+    .allMenu > span{
+        float: right; width: 10%;
+    }
+    .allMenu > span a{
+        display:inline-block; text-indent: -9999px; 
+        background-repeat: no-repeat; background-position: center;
+        width: 30px; height: 28px;
+    }
+    .allMenu > span a:first-of-type{
+        background-image: url('../images/ico_my.png');
+        margin-right: 25px;
+    }
+    .allMenu > span a:last-of-type{
+        background-image: url('../images/ico_busket.png');
+    }
+    .allMenu div:nth-child(4):before{
+        content: ''; display: block; clear: both;
+    }
+    .allMenu div:nth-child(4){
+        margin: 0 auto; text-align: center;
+    }
+    .allMenu div:nth-child(4) input[type='search']{
+        background-color: transparent; border: 1px solid white;
+        width: 900px; height: 52px; padding: 0 50px 0 10px;
+        background: url('../images/ico_search.png') no-repeat right 20px center;
+        margin: 80px 0 80px 0; font-size: 16px; color: white;
+    }
+    footer div{
+        float: left; width: 77%; margin-left: 6.5%;
+    }
+    footer div p{
+        display: inline; text-transform: none; color: #6c6c6c;
+    }
+    footer div p:first-child{
+        font-size: 13px; margin-right: 25px;
+    }
+    footer div p:last-of-type{
+        font-weight: 500; font-size: 12px; margin-right: 4px;
+    }
+    footer a{
+        font-weight: 500; font-size: 13px;
+    }
+    footer span a{
+        display: inline-block; text-indent: -9999px;
+        width: 26px; height: 26px; background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer span a:first-child{
+        background-image: url('../images/ico_sns_01.png');
+        margin-right: 1.2%;
+    }
+    footer span a:nth-child(2){
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer span a:last-child{
+        background-image: url('../images/ico_sns_03.png');
+        margin-left: 1.2%;
+    }
+    .paging{
+        margin: 0 auto; padding: 0 5% 0 5%;
+    }    
+    .paging:before{
+        content: ''; display: block; clear: both;
+    }
+    .paging{
+        margin-bottom: 50px;
+    }
+    .paging a{
+        color: #6c6c6c; font-size: 15px; font-family: 400; float: left;
+    }
+    .paging a{
+        width: 45px; line-height: 45px; background-color: #f4f4f4;
+    }
+    .paging ol li{
+        text-align: center;
+    }
+    .paging ol li:not(:first-of-type) a{
+        margin-left: 12px;
+    }
+    .paging > a:last-child{
+        background: url('../images/triangle_next.png') no-repeat center;
+        background-color: #f4f4f4; text-indent: -9999px; margin-left: 12px;
+    }
+    .paging > a:first-child{
+        display: none;
+    }
+    .paging .active{
+        background-color: #6c6c6c; color: white;
+    }
+}
+/* desktop */
