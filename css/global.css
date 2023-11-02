@@ -10,7 +10,7 @@
 .orderHistoryArea, .aboutArea, .contactUsArea, .PrivacyArea,
 .refundArea, .cartEmptyArea, .confirmArea, .cartArea, .paymentArea, 
 .payment2Area, #loginPopup{
-    font-family: 'Raleway'!important; 
+    font-family: 'Raleway' !important; 
 }
 .allMenu, .contentsArea, .optionArea div h2{
     text-transform: uppercase;
