@@ -1,5 +1,5 @@
 .allMenu, .contentsArea, .introArea, .productListArea,
-.detailProductArea, .optionArea, .recommArea,
+.detailProductArea, .optionArea p, .recommArea,
 .signUpArea, .signUpCompleteArea,
 .signInArea, .resetPWArea, #confirmPopup, .shippingReturnArea,
 .myAccountEmptyArea, .myAccountFullArea, .viewAccountArea,
@@ -10,7 +10,7 @@
 .orderHistoryArea, .aboutArea, .contactUsArea, .PrivacyArea,
 .refundArea, .cartEmptyArea, .confirmArea, .cartArea, .paymentArea, 
 .payment2Area, #loginPopup{
-    font-family: 'Raleway' !important; 
+    font-family: 'Raleway'; 
 }
 .allMenu, .contentsArea, .optionArea div h2{
     text-transform: uppercase;
